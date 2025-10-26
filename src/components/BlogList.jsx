@@ -41,28 +41,6 @@ export default function BlogList() {
                 onChange={(event) => setSearchTerm(event.currentTarget.value)}
             />
 
-            <Grid mb="2rem" gutter="xl">
-                {filteredPosts.map((blog) => (
-                    <GridCol key={blog.id} span={{ base: 12, sm: 6, md: 4 }}>
-                        <Link td="none" href={blog.link}>
-                            <Paper p="1rem">
-                                <Stack mih="30rem" justify="space-between" h="100%">
-                                    <div>
-                                        <Image mb="1rem" src={blog.image} alt={blog.title} />
-                                        <Text lineClamp={2} fw={500} c="bright" my="0.6rem" fz="1.4rem" order={2}>{blog.title}</Text>
-                                        <Text lineClamp={3} c="dimmed">{blog.description}</Text>
-                                    </div>
-                                    <Group gap="0.8rem">
-                                        <Text size="lg">{t('blog.readPost')}</Text>
-                                        <IconArrowRight size="1.2rem" />
-                                    </Group>
-                                </Stack>
-                            </Paper>
-                        </Link>
-                    </GridCol>
-                ))}
-            </Grid>
-
             <Paper className="globe_paper_large" p={{ base: "2rem 1rem", sm: "4rem 2rem" }}>
                 <Title mb="1rem" order={2} fz={{ base: "2rem", md: "2.4rem" }}>{t('needSomethingElse.title')}</Title>
                 <Text c="dimmed" maw="40rem" mb="1rem" size="lg">{t('needSomethingElse.description')}</Text>
