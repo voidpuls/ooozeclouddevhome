@@ -96,6 +96,6 @@ export const theme = createTheme({
   },
   primaryColor: "primary",
   colors: {
-    primary: colorsTuple("#A369F9")
+    primary: colorsTuple("#69f97f")
   }
 });
