@@ -7,6 +7,6 @@ It includes the following:
 Mantine docs: https://mantine.dev/
 Next.js docs: https://nextjs.org/docs
 Get support: https://www.buzz.dev/tickets/new
-Community Discord: https://discord.gg/buzz
+Community Discord: https://discord.gg/oozecloud
 
 Enjoy!

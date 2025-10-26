@@ -24,7 +24,7 @@ export const careersConfig = {
                 "Understanding of security best practices"
             ],
             salary: "£65,000 - £85,000",
-            apply_link: "https://discord.gg/buzz",
+            apply_link: "https://discord.gg/oozecloud",
             apply_button_text: "Apply via Discord"
         },
         {
@@ -47,7 +47,7 @@ export const careersConfig = {
                 "Ability to work in shifts"
             ],
             salary: "£30,000 - £40,000",
-            apply_link: "https://discord.gg/buzz",
+            apply_link: "https://discord.gg/oozecloud",
             apply_button_text: "Apply via Discord"
         },
         {
@@ -70,7 +70,7 @@ export const careersConfig = {
                 "Knowledge of database systems"
             ],
             salary: "£45,000 - £65,000",
-            apply_link: "https://discord.gg/buzz",
+            apply_link: "https://discord.gg/oozecloud",
             apply_button_text: "Apply via Discord"
         }
     ]

@@ -2,32 +2,16 @@ import { IconBrandFacebook, IconBrandInstagram, IconBrandX, IconCloudComputing, 
 import { FaDiscord } from "react-icons/fa6"
 
 export const settings = {
-   company_name: "Buzz Hosting",
-   website_domain: "buzzy.hosting",
-   billing_url: "https://billing.buzzy.hosting",
+   company_name: "OozeCloud",
+   website_domain: "oozecloud.com",
+   billing_url: "https://client.oozecloud.com",
    socials: {
       email: "info@buzzy.hosting",
       phone: "+1 (123) 456-7890",
       other: {
          discord: {
-            link: "https://discord.gg/buzz",
+            link: "https://discord.gg/oozecloud",
             icon: <FaDiscord size="1rem" />
-         },
-         x: {
-            link: "https://x.com/",
-            icon: <IconBrandX size="1rem" />
-         },
-         instagram: {
-            link: "https://instagram.com/",
-            icon: <IconBrandInstagram size="1rem" />
-         },
-         facebook: {
-            link: "https://facebook.com/",
-            icon: <IconBrandFacebook size="1rem" />
-         },
-         tiktok: {
-            link: "https://tiktok.com/",
-            icon: <IconBrandTiktok size="1rem" />
          },
          youtube: {
             link: "https://youtube.com/",
@@ -47,7 +31,7 @@ export const settings = {
       enabled: true,
       message: "Get up to 10% off on all plans. Use code NEW10",
    },
-   create_ticket_url: "https://billing.buzz.hosting/submitticket.php",
+   create_ticket_url: "https://billing.oozecloud.com",
    translation_system: {
       enabled: true, // Will hide language switcher if disabled
       default_language: "en", // Default language to use if no language is selected
@@ -204,7 +188,7 @@ export const settings = {
 
    // Array of blog post IDs from the blogs.js file to display on the home page
    home_page_blogs: [1, 2, 3], // Maximum of 3
-   navbar_support_link: "https://discord.gg/buzz",
+   navbar_support_link: "https://discord.gg/oozecloud",
 
    // Icons: https://react-icons.github.io/react-icons/
    // Ensure to import the icon at the top of the file
@@ -243,8 +227,8 @@ export const settings = {
             { label: 'Blog', link: '/blog' },
             { label: 'Contact us', link: '/contact-us' },
             { label: 'Knowledgebase', link: '/knowledgebase' },
-            { label: 'Create a ticket', link: 'https://billing.buzzy.hosting/submitticket.php' },
-            { label: 'Join our Discord', link: 'https://discord.gg/buzz' },
+            { label: 'Create a ticket', link: 'https://billing.oozecloud.com' },
+            { label: 'Join our Discord', link: 'https://discord.gg/oozecloud' },
             { label: 'Careers', link: '/careers' },
          ],
       },
