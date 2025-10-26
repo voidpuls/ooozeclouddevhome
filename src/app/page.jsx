@@ -180,30 +180,6 @@ export default function HomePage() {
         {settings.reviews_visible && <FadeInOnScroll><ReviewsCarousel /></FadeInOnScroll>}
 
         <Container>
-          <FadeInOnScroll>
-            <Title mb="2rem" order={2} ta="center" mt="8rem" fz={{ base: "2.8rem", md: "2.4rem" }}>{t('blog.title')}</Title>
-            <Grid mb="2rem">
-              {blogPosts.filter(blog => settings.home_page_blogs.includes(blog.id)).map((blog, index) => (
-                <GridCol span={{ base: 12, xs: 6, md: 4 }} key={index}>
-                  <Link href={blog.link} target="_blank">
-                    <Paper className="hover" p="1rem">
-                      <Stack gap={0} justify="space-between" mih="30rem">
-                        <div>
-                          <Image mb="1rem" src={blog.image} alt={blog.title} />
-                          <Text fw={500} c="bright" my="0.6rem" fz="1.4rem" order={2}>{blog.title}</Text>
-                          <Text lineClamp={2} c="dimmed">{blog.description}</Text>
-                        </div>
-                        <Group gap="0.8rem" mt="2rem">
-                          <Text size="lg">{t('blog.readPost')}</Text>
-                          <IconArrowRight size="1.2rem" />
-                        </Group>
-                      </Stack>
-                    </Paper>
-                  </Link>
-                </GridCol>
-              ))}
-            </Grid>
-          </FadeInOnScroll>
 
           <FadeInOnScroll>
             <Paper className="globe_paper_large" p={{ base: "2rem 1rem", sm: "4rem 2rem" }}>
