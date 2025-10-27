@@ -2,7 +2,6 @@ import { ActionIcon, alpha, Anchor, Box, Button, Container, Grid, GridCol, Group
 import { IconArrowRight, IconChevronDown, IconHeadset, IconRocket, IconShieldCheck, IconUser } from "@tabler/icons-react";
 import { useTranslations } from 'next-intl';
 import { FaDiscord } from "react-icons/fa6";
-import { blogPosts } from "../../config/blogs";
 import { settings } from "../../config/settings";
 import { homePlans } from "../../data/plans/home";
 import FadeInOnScroll from "../components/Framer/FadeInOnScroll";
