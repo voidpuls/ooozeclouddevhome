@@ -130,7 +130,6 @@ export default function HomePage() {
             </Grid>
             <Group mb="6rem" mt="2rem">
               <Button component={Link} href={settings.billing_url} target="_blank" size="lg" variant="plain">{t('features.orderService')}</Button>
-              <Button component={Link} href="/blog" size="lg" variant="subtle">{t('features.visitBlog')}</Button>
             </Group>
           </FadeInOnScroll>
         </Container>
