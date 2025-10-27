@@ -35,6 +35,7 @@ export default async function RootLayout({ children }) {
 
             {settings.google_analytics_id !== "" && <GoogleAnalytics gaId={settings.google_analytics_id} />}
             <ThemeHotkey />
+            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4211552204137638" crossorigin="anonymous" data-checked-head="true"></script>
 
             <div className="navbar">
               {settings.top_banner.enabled && (
