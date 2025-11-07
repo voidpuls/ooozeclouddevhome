@@ -206,8 +206,8 @@ export default function WebHosting() {
             onClick={() => handleCountrySelect(code)}
             className={`relative group p-6 rounded-xl border-2 transition-all duration-300 min-w-[200px] ${
               selectedCountry === code
-                ? 'border-[#fbbf24] bg-[#fbbf24]/10'
-                : 'border-gray-800 hover:border-[#fbbf24]/50 hover:bg-[#fbbf24]/5'
+                ? 'border-[#228B22] bg-[#228B22]/10'
+                : 'border-gray-800 hover:border-[#228B22]/50 hover:bg-[#228B22]/5'
             }`}
           >
             <div className="flex flex-col items-center">
@@ -223,7 +223,7 @@ export default function WebHosting() {
               <span className="text-base text-gray-400">{data.name}</span>
               {selectedCountry === code && (
                 <div className="absolute -top-3 -right-3">
-                  <div className="w-6 h-6 bg-[#fbbf24] rounded-full flex items-center justify-center">
+                  <div className="w-6 h-6 bg-[#228B22] rounded-full flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
@@ -253,7 +253,7 @@ export default function WebHosting() {
                 animationDuration: `${5 + Math.random() * 5}s`
               }}
             >
-              <div className="w-2 h-2 bg-[#fbbf24]/10 rounded-full blur-sm"></div>
+              <div className="w-2 h-2 bg-[#228B22]/10 rounded-full blur-sm"></div>
             </div>
           ))}
         </div>
@@ -268,15 +268,15 @@ export default function WebHosting() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
               {/* Left Content */}
               <div className="flex-1 text-center lg:text-left">
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#fbbf24]/10 text-[#fbbf24] text-sm font-medium mb-6">
-                  <span className="w-2 h-2 rounded-full bg-[#fbbf24] animate-pulse mr-2"></span>
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#228B22]/10 text-[#228B22] text-sm font-medium mb-6">
+                  <span className="w-2 h-2 rounded-full bg-[#228B22] animate-pulse mr-2"></span>
                   Professional Web Hosting
                 </div>
                 <h1 className="text-4xl lg:text-7xl font-bold mb-6 tracking-tight leading-none">
                   Your Website's 
                   <span className="relative">
-                    <span className="relative z-10 text-[#fbbf24]"> Perfect Home</span>
-                    <span className="absolute bottom-0 left-0 w-full h-2 bg-[#fbbf24]/20 rounded-full blur-sm"></span>
+                    <span className="relative z-10 text-[#228B22]"> Perfect Home</span>
+                    <span className="absolute bottom-0 left-0 w-full h-2 bg-[#228B22]/20 rounded-full blur-sm"></span>
                   </span>
                 </h1>
                 <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
@@ -292,9 +292,9 @@ export default function WebHosting() {
                     { value: "1-Click", label: "Install" }
                   ].map((stat, index) => (
                     <div key={index} className="relative group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-[#fbbf24]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#228B22]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
                       <div className="relative text-center">
-                        <div className="text-2xl font-bold text-[#fbbf24] mb-1">{stat.value}</div>
+                        <div className="text-2xl font-bold text-[#228B22] mb-1">{stat.value}</div>
                         <div className="text-sm text-gray-400">{stat.label}</div>
                       </div>
                     </div>
@@ -306,7 +306,7 @@ export default function WebHosting() {
               <div className="flex-1 w-full max-w-xl">
                 <div className="relative">
                   {/* Terminal Glow Effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#fbbf24] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#228B22] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
                   
                   <div className="relative bg-black rounded-xl overflow-hidden border border-gray-800/50">
                     {/* Terminal Header */}
@@ -326,7 +326,7 @@ export default function WebHosting() {
                     <div className="p-4 font-mono text-sm">
                       <div className="space-y-2">
                         <div className="flex items-center text-gray-400">
-                          <span className="text-[#fbbf24]">$</span>
+                          <span className="text-[#228B22]">$</span>
                           <span className="ml-2 typing-animation">install --type wordpress --domain example.com</span>
                         </div>
                         <div className="pl-4">
@@ -350,7 +350,7 @@ export default function WebHosting() {
                               </svg>
                               <span>Files downloaded</span>
                             </div>
-                            <div className="flex items-center text-[#fbbf24]">
+                            <div className="flex items-center text-[#228B22]">
                               <span className="w-4 h-4 mr-2 animate-pulse">⚡</span>
                               <span>Configuring WordPress...</span>
                             </div>
@@ -364,10 +364,10 @@ export default function WebHosting() {
                       <div className="space-y-2">
                         <div className="flex justify-between text-xs">
                           <span className="text-gray-400">Progress</span>
-                          <span className="text-[#fbbf24]">75%</span>
+                          <span className="text-[#228B22]">75%</span>
                         </div>
                         <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
-                          <div className="h-full bg-[#fbbf24] w-[75%] rounded-full"></div>
+                          <div className="h-full bg-[#228B22] w-[75%] rounded-full"></div>
                         </div>
                       </div>
                     </div>
@@ -382,13 +382,13 @@ export default function WebHosting() {
         <div className="py-24">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#fbbf24]/10 text-[#fbbf24] text-sm font-medium mb-6">
-                <span className="w-2 h-2 rounded-full bg-[#fbbf24] mr-2"></span>
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#228B22]/10 text-[#228B22] text-sm font-medium mb-6">
+                <span className="w-2 h-2 rounded-full bg-[#228B22] mr-2"></span>
                 Premium Features
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Everything You Need to 
-                <span className="text-[#fbbf24]"> Succeed Online</span>
+                <span className="text-[#228B22]"> Succeed Online</span>
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 Powerful features designed to help you build and grow your online presence.
@@ -554,9 +554,9 @@ export default function WebHosting() {
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                     className="w-full px-6 py-4 flex items-center justify-between text-left"
                   >
-                    <h3 className="text-xl font-bold text-[#fbbf24]">{faq.question}</h3>
+                    <h3 className="text-xl font-bold text-[#228B22]">{faq.question}</h3>
                     <svg 
-                      className={`w-6 h-6 text-[#fbbf24] transform transition-transform duration-200 ${openFaq === index ? 'rotate-180' : ''}`} 
+                      className={`w-6 h-6 text-[#228B22] transform transition-transform duration-200 ${openFaq === index ? 'rotate-180' : ''}`} 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"

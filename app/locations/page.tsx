@@ -192,7 +192,7 @@ export default function LocationsPage() {
   // Ping değerine göre renk belirleme
   const getPingColor = (ping: number) => {
     if (ping < 100) return 'text-green-400';
-    if (ping < 150) return 'text-[#fbbf24]';
+    if (ping < 150) return 'text-[#228B22]';
     return 'text-red-400';
   };
 
@@ -202,8 +202,8 @@ export default function LocationsPage() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#fbbf24]/50 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#fbbf24]/50 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -253,11 +253,11 @@ export default function LocationsPage() {
 
                 {/* Location Point */}
                 <div className="relative">
-                  <div className="w-1.5 h-1.5 bg-[#fbbf24] rounded-sm transform rotate-45 border border-[#fbbf24]"></div>
+                  <div className="w-1.5 h-1.5 bg-[#228B22] rounded-sm transform rotate-45 border border-[#228B22]"></div>
                 </div>
 
                 {/* Ping Info */}
-                <div className="mt-2 bg-[#0B0E14]/90 backdrop-blur-sm rounded-full px-3 py-1 border border-[#fbbf24]/10">
+                <div className="mt-2 bg-[#0B0E14]/90 backdrop-blur-sm rounded-full px-3 py-1 border border-[#228B22]/10">
                   {pingError[location.id] ? (
                     <div className="text-red-400 text-xs">Failed</div>
                   ) : (

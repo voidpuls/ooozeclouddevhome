@@ -6,8 +6,8 @@
     <div class="fixed inset-0 -z-10">
         <div class="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#fbbf24]/50 to-transparent"></div>
-        <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#fbbf24]/50 to-transparent"></div>
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
     </div>
 
     <livewire:locations-map />
@@ -46,11 +46,11 @@
 
                     {{-- Location Point --}}
                     <div class="relative">
-                        <div class="w-1.5 h-1.5 bg-[#fbbf24] rounded-sm transform rotate-45 border border-[#fbbf24]"></div>
+                        <div class="w-1.5 h-1.5 bg-[#228B22] rounded-sm transform rotate-45 border border-[#228B22]"></div>
                     </div>
 
                     {{-- Ping Info --}}
-                    <div class="mt-2 bg-[#0B0E14]/90 backdrop-blur-sm rounded-full px-3 py-1 border border-[#fbbf24]/10">
+                    <div class="mt-2 bg-[#0B0E14]/90 backdrop-blur-sm rounded-full px-3 py-1 border border-[#228B22]/10">
                         @if($pingErrors[$location['id']] ?? false)
                             <div class="text-red-400 text-xs">Failed</div>
                         @else

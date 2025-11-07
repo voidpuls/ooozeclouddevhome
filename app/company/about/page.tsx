@@ -42,7 +42,7 @@ export default function AboutUs() {
   ];
 
   const milestones = [
-    { year: '2017', title: 'LIQUID Founded', description: 'Started with one data center in Germany' },
+    { year: '2017', title: 'OozeCloud Founded', description: 'Started with one data center in Germany' },
     { year: '2019', title: 'Expansion', description: 'Added UK data center and doubled our client base' },
     { year: '2021', title: 'Tech Upgrade', description: 'Implemented cutting-edge network architecture' },
     { year: '2023', title: 'Global Growth', description: 'Expanded to Poland and Turkey, serving clients worldwide' }
@@ -77,20 +77,20 @@ export default function AboutUs() {
 
           <div className="prose prose-lg prose-invert mx-auto">
             <p className="text-gray-300 leading-relaxed">
-              In an era where digital infrastructure forms the backbone of innovation, LIQUID stands at the forefront 
+              In an era where digital infrastructure forms the backbone of innovation, OozeCloud stands at the forefront 
               of transformative hosting solutions. Our journey began with a clear vision: to revolutionize the hosting 
               industry by creating an infrastructure that adapts and evolves with the rapidly changing digital landscape.
             </p>
 
             <p className="text-gray-300 leading-relaxed mt-6">
               The digital world demands more than just server space – it requires an ecosystem that understands and 
-              anticipates the needs of modern businesses. At LIQUID, we've built exactly that. Our state-of-the-art 
+              anticipates the needs of modern businesses. At OozeCloud, we've built exactly that. Our state-of-the-art 
               data centers across Europe represent more than just physical infrastructure; they are gateways to 
               unlimited digital possibilities.
             </p>
 
             <p className="text-gray-300 leading-relaxed mt-6">
-              What sets LIQUID apart is our unwavering commitment to three core principles:
+              What sets OozeCloud apart is our unwavering commitment to three core principles:
             </p>
 
             <ul className="space-y-4 mt-6 text-gray-300">
@@ -142,20 +142,20 @@ export default function AboutUs() {
             </ul>
 
             <p className="text-gray-300 leading-relaxed mt-6">
-              To our current clients: your trust in LIQUID drives us to continually raise the bar in hosting excellence. 
-              To those considering LIQUID: we invite you to experience infrastructure that doesn't just host your 
+              To our current clients: your trust in OozeCloud drives us to continually raise the bar in hosting excellence. 
+              To those considering OozeCloud: we invite you to experience infrastructure that doesn't just host your 
               applications – it empowers their potential.
             </p>
 
             <p className="text-gray-300 leading-relaxed mt-6">
-              The future of digital infrastructure is being written today, and LIQUID is holding the pen. Join us in 
+              The future of digital infrastructure is being written today, and OozeCloud is holding the pen. Join us in 
               shaping a future where technology knows no bounds.
             </p>
 
             <div className="mt-12 text-gray-300">
               <p>Forward-thinking regards,</p>
               <p className="font-bold text-gradient bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Alexander Reeves</p>
-              <p>Chief Executive Officer, LIQUID</p>
+              <p>Chief Executive Officer, OozeCloud</p>
             </div>
           </div>
         </motion.div>
@@ -175,7 +175,7 @@ export default function AboutUs() {
               Ready to Transform Your Digital Infrastructure?
             </h2>
             <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-              Join the ranks of forward-thinking companies who trust LIQUID with their digital future.
+              Join the ranks of forward-thinking companies who trust OozeCloud with their digital future.
             </p>
             <Link href="/register">
               <button className="px-8 py-3 bg-black text-amber-400 rounded-lg font-medium hover:bg-gray-900 transition-colors">

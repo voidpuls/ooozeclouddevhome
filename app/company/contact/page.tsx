@@ -63,8 +63,8 @@ export default function ContactUs() {
             {
               icon: <Mail className="w-6 h-6" />,
               title: "Email",
-              info: "support@liquid.com",
-              action: "mailto:support@liquid.com"
+              info: "support@OozeCloud.com",
+              action: "mailto:support@OozeCloud.com"
             },
             {
               icon: <Phone className="w-6 h-6" />,

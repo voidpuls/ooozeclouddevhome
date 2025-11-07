@@ -117,10 +117,10 @@ export default function StatusPage() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#fbbf24]/5 to-transparent opacity-20"
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#228B22]/5 to-transparent opacity-20"
              style={{
                backgroundSize: '50px 50px',
-               backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(251, 191, 36, 0.03) 25%, rgba(251, 191, 36, 0.03) 26%, transparent 27%, transparent 74%, rgba(251, 191, 36, 0.03) 75%, rgba(251, 191, 36, 0.03) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(251, 191, 36, 0.03) 25%, rgba(251, 191, 36, 0.03) 26%, transparent 27%, transparent 74%, rgba(251, 191, 36, 0.03) 75%, rgba(251, 191, 36, 0.03) 76%, transparent 77%, transparent)'
+               backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent)'
              }}
         ></div>
       </div>
@@ -155,7 +155,7 @@ export default function StatusPage() {
         >
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Server className="w-8 h-8 text-[#fbbf24]" />
+              <Server className="w-8 h-8 text-[#228B22]" />
               <div>
                 <h2 className="text-2xl font-bold">All Systems Operational</h2>
                 <p className="text-gray-400">Last updated: {new Date().toLocaleDateString('en-GB', {
@@ -200,7 +200,7 @@ export default function StatusPage() {
                 </div>
                 <div>
                   <div className="text-gray-400 text-sm mb-1">Latency</div>
-                  <div className="text-xl font-bold text-[#fbbf24]">{service.latency}ms</div>
+                  <div className="text-xl font-bold text-[#228B22]">{service.latency}ms</div>
                 </div>
               </div>
             </motion.div>

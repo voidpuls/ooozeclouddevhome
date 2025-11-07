@@ -13,7 +13,7 @@ const chakraPetch = Chakra_Petch({
 });
 
 export const metadata: Metadata = {
-  title: "LIQUID - Premium Game Hosting for Serious Gamers",
+  title: "OozeCloud - Premium Game Hosting for Serious Gamers",
   description: "Deploy your game server in seconds. Enjoy low latency, high performance, and 24/7 support. Built by gamers, for gamers.",
 };
 

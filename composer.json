@@ -1,7 +1,7 @@
 {
-    "name": "liquid/hosting",
+    "name": "OozeCloud/hosting",
     "type": "project",
-    "description": "LIQUID Game Hosting Platform",
+    "description": "OozeCloud Game Hosting Platform",
     "keywords": ["game", "hosting", "servers"],
     "license": "MIT",
     "require": {

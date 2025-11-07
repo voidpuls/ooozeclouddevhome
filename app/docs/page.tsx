@@ -51,10 +51,10 @@ export default function DocsPage() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#fbbf24]/5 to-transparent opacity-20"
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#228B22]/5 to-transparent opacity-20"
              style={{
                backgroundSize: '50px 50px',
-               backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(251, 191, 36, 0.03) 25%, rgba(251, 191, 36, 0.03) 26%, transparent 27%, transparent 74%, rgba(251, 191, 36, 0.03) 75%, rgba(251, 191, 36, 0.03) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(251, 191, 36, 0.03) 25%, rgba(251, 191, 36, 0.03) 26%, transparent 27%, transparent 74%, rgba(251, 191, 36, 0.03) 75%, rgba(251, 191, 36, 0.03) 76%, transparent 77%, transparent)'
+               backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent)'
              }}
         ></div>
       </div>
@@ -94,7 +94,7 @@ export default function DocsPage() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search documentation..."
-              className="w-full pl-12 pr-4 py-3 bg-white/[0.03] border border-white/[0.05] rounded-xl focus:outline-none focus:border-[#fbbf24]/50 focus:ring-1 focus:ring-[#fbbf24]/50 transition-colors placeholder:text-gray-500"
+              className="w-full pl-12 pr-4 py-3 bg-white/[0.03] border border-white/[0.05] rounded-xl focus:outline-none focus:border-[#228B22]/50 focus:ring-1 focus:ring-[#228B22]/50 transition-colors placeholder:text-gray-500"
             />
           </div>
         </motion.div>
@@ -126,20 +126,20 @@ export default function DocsPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#fbbf24]/20 transition-colors group"
+              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#228B22]/20 transition-colors group"
             >
               <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-xl bg-[#fbbf24]/10 text-[#fbbf24]">
+                <div className="p-3 rounded-xl bg-[#228B22]/10 text-[#228B22]">
                   <item.icon className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 group-hover:text-[#fbbf24] transition-colors">
+                  <h3 className="text-lg font-semibold mb-2 group-hover:text-[#228B22] transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-gray-400 text-sm mb-4">{item.description}</p>
                   <Link
                     href={item.link}
-                    className="inline-flex items-center text-sm text-[#fbbf24] hover:text-[#fbbf24]/80 transition-colors"
+                    className="inline-flex items-center text-sm text-[#228B22] hover:text-[#228B22]/80 transition-colors"
                   >
                     Learn more
                     <ChevronRight className="w-4 h-4 ml-1" />
@@ -175,11 +175,11 @@ export default function DocsPage() {
   }'`}
             />
             <div className="flex items-center space-x-2 text-sm">
-              <Terminal className="w-4 h-4 text-[#fbbf24]" />
+              <Terminal className="w-4 h-4 text-[#228B22]" />
               <span className="text-gray-400">Need help? Check out our</span>
               <Link
                 href="/docs/api/authentication"
-                className="text-[#fbbf24] hover:text-[#fbbf24]/80 transition-colors"
+                className="text-[#228B22] hover:text-[#228B22]/80 transition-colors"
               >
                 Authentication Guide
               </Link>

@@ -80,7 +80,7 @@ class LocationsMap extends Component
     public function getPingColor($ping)
     {
         if ($ping < 100) return 'text-green-400';
-        if ($ping < 150) return 'text-[#fbbf24]';
+        if ($ping < 150) return 'text-[#228B22]';
         return 'text-red-400';
     }
 

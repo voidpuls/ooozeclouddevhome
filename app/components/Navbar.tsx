@@ -137,37 +137,37 @@ export default function Navbar() {
         {
           title: 'About Us',
           url: '/company/about',
-          icon: <Building className="w-8 h-8 text-[#fbbf24]" />,
+          icon: <Building className="w-8 h-8 text-[#228B22]" />,
           description: "Learn about our story and mission"
         },
         {
           title: 'Contact Us',
           url: '/company/contact',
-          icon: <Mail className="w-8 h-8 text-[#fbbf24]" />,
+          icon: <Mail className="w-8 h-8 text-[#228B22]" />,
           description: "Get in touch with our team"
         },
         {
           title: 'Terms of Service',
           url: '/company/terms',
-          icon: <Scale className="w-8 h-8 text-[#fbbf24]" />,
+          icon: <Scale className="w-8 h-8 text-[#228B22]" />,
           description: "Our service terms and conditions"
         },
         {
           title: 'Privacy Policy',
           url: '/company/privacy',
-          icon: <Lock className="w-8 h-8 text-[#fbbf24]" />,
+          icon: <Lock className="w-8 h-8 text-[#228B22]" />,
           description: "How we protect your data"
         },
         {
           title: 'Cookie Policy',
           url: '/company/cookies',
-          icon: <Cookie className="w-8 h-8 text-[#fbbf24]" />,
+          icon: <Cookie className="w-8 h-8 text-[#228B22]" />,
           description: "How we use cookies on our website"
         },
         {
           title: 'Locations',
           url: '/locations',
-          icon: <Globe className="w-8 h-8 text-[#fbbf24]" />,
+          icon: <Globe className="w-8 h-8 text-[#228B22]" />,
           description: "Our global data centers"
         }
       ]
@@ -243,27 +243,27 @@ export default function Navbar() {
       <div className={`w-full transition-all duration-300 ${
         isScrolled 
           ? 'bg-[#000000]' 
-          : 'bg-[#000000]/100 backdrop-blur-sm shadow-lg border-b border-[#fbbf24]/10'
+          : 'bg-[#000000]/100 backdrop-blur-sm shadow-lg border-b border-[#228B22]/10'
       }`}>
         <div className="w-full mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
           {/* Left Section: Logo and Announcements */}
           <div className="flex items-center space-x-4 sm:space-x-8">
             {/* Logo */}
             <Link href="/" className="group flex items-center">
-              <h1 className="text-[#fbbf24] text-2xl sm:text-3xl font-bold tracking-tight group-hover:text-white transition-all duration-300 transform group-hover:scale-105">
-                LIQUID
+              <h1 className="text-[#228B22] text-2xl sm:text-3xl font-bold tracking-tight group-hover:text-white transition-all duration-300 transform group-hover:scale-105">
+                OozeCloud
               </h1>
             </Link>
 
             {/* Announcement Bar */}
             <div className="hidden lg:flex items-center space-x-6">
-              <div className="flex items-center space-x-2 px-4 py-1 bg-[#fbbf24]/10 rounded-full">
+              <div className="flex items-center space-x-2 px-4 py-1 bg-[#228B22]/10 rounded-full">
                 <span className="flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#fbbf24] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#fbbf24]"></span>
+                  <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#228B22] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#228B22]"></span>
                 </span>
-                <span className="text-[#fbbf24] text-sm">New servers available!</span>
-                <span className="text-white bg-[#fbbf24] px-2 py-0.5 text-xs rounded-full">5</span>
+                <span className="text-[#228B22] text-sm">New servers available!</span>
+                <span className="text-white bg-[#228B22] px-2 py-0.5 text-xs rounded-full">5</span>
               </div>
             </div>
           </div>
@@ -279,7 +279,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.url}
-                    className="px-4 py-2 text-white hover:text-[#fbbf24] transition-colors duration-200 flex items-center space-x-1 group nav-link"
+                    className="px-4 py-2 text-white hover:text-[#228B22] transition-colors duration-200 flex items-center space-x-1 group nav-link"
                     onClick={(e) => {
                       if (item.hasDropdown) {
                         e.preventDefault();
@@ -304,7 +304,7 @@ export default function Navbar() {
 
                   {item.hasDropdown && activeDropdown === item.title && (
                     <div 
-                      className={`absolute mt-0 bg-[#0B0E14] border border-[#fbbf24]/10 rounded-lg shadow-xl ${
+                      className={`absolute mt-0 bg-[#0B0E14] border border-[#228B22]/10 rounded-lg shadow-xl ${
                         item.title === 'Game Servers' 
                           ? 'w-[800px] p-4 -translate-x-1/2 left-1/2' 
                           : item.title === 'Company'
@@ -318,7 +318,7 @@ export default function Navbar() {
                             <Link
                               key={dropdownItem.title}
                               href={dropdownItem.url}
-                              className="block p-4 text-white hover:bg-[#fbbf24]/5 transition-all duration-200 rounded-lg border border-[#fbbf24]/5"
+                              className="block p-4 text-white hover:bg-[#228B22]/5 transition-all duration-200 rounded-lg border border-[#228B22]/5"
                               onClick={handleLinkClick}
                             >
                               <div className="flex items-center space-x-4">
@@ -387,7 +387,7 @@ export default function Navbar() {
                                     />
                                   )}
                                   {dropdownItem.title === 'Other Games' && (
-                                    <div className="w-12 h-12 flex items-center justify-center text-[#fbbf24]">
+                                    <div className="w-12 h-12 flex items-center justify-center text-[#228B22]">
                                       <svg 
                                         className="w-8 h-8" 
                                         viewBox="0 0 24 24" 
@@ -432,21 +432,21 @@ export default function Navbar() {
                             <Link
                               key={dropdownItem.title}
                               href={dropdownItem.url}
-                              className="block px-6 py-4 text-white hover:bg-[#fbbf24]/5 transition-all duration-200 first:rounded-t-lg last:rounded-b-lg border-b border-[#fbbf24]/5 last:border-b-0"
+                              className="block px-6 py-4 text-white hover:bg-[#228B22]/5 transition-all duration-200 first:rounded-t-lg last:rounded-b-lg border-b border-[#228B22]/5 last:border-b-0"
                               onClick={handleLinkClick}
                             >
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-4">
                                   {dropdownItem.title === 'Web Hosting' ? (
-                                    <svg className="w-6 h-6 text-[#fbbf24]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <svg className="w-6 h-6 text-[#228B22]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                                     </svg>
                                   ) : dropdownItem.title === 'WordPress Hosting' ? (
-                                    <svg className="w-6 h-6 text-[#fbbf24]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <svg className="w-6 h-6 text-[#228B22]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                                     </svg>
                                   ) : (
-                                    <svg className="w-6 h-6 text-[#fbbf24]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <svg className="w-6 h-6 text-[#228B22]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                                     </svg>
                                   )}
@@ -470,12 +470,12 @@ export default function Navbar() {
                             <Link
                               key={dropdownItem.title}
                               href={dropdownItem.url}
-                              className="block px-6 py-4 text-white hover:bg-[#fbbf24]/5 transition-all duration-200 first:rounded-t-lg last:rounded-b-lg border-b border-[#fbbf24]/5 last:border-b-0"
+                              className="block px-6 py-4 text-white hover:bg-[#228B22]/5 transition-all duration-200 first:rounded-t-lg last:rounded-b-lg border-b border-[#228B22]/5 last:border-b-0"
                               onClick={handleLinkClick}
                             >
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center space-x-4">
-                                  <div className="p-3 bg-[#fbbf24]/10 rounded-xl">
+                                  <div className="p-3 bg-[#228B22]/10 rounded-xl">
                                     {dropdownItem.icon}
                                   </div>
                                   <div>
@@ -497,14 +497,14 @@ export default function Navbar() {
                           <Link
                             key={dropdownItem.title}
                             href={dropdownItem.url}
-                            className="block px-6 py-4 text-white hover:bg-[#fbbf24]/5 transition-all duration-200 first:rounded-t-lg last:rounded-b-lg border-b border-[#fbbf24]/5 last:border-b-0"
+                            className="block px-6 py-4 text-white hover:bg-[#228B22]/5 transition-all duration-200 first:rounded-t-lg last:rounded-b-lg border-b border-[#228B22]/5 last:border-b-0"
                             onClick={handleLinkClick}
                           >
                             <div className="flex items-center justify-between">
                               <div className="flex items-center space-x-4">
                                 {dropdownItem.title === 'Support' ? (
                                   <svg 
-                                    className="w-6 h-6 text-[#fbbf24] shrink-0" 
+                                    className="w-6 h-6 text-[#228B22] shrink-0" 
                                     viewBox="0 0 24 24" 
                                     fill="none" 
                                     stroke="currentColor"
@@ -518,7 +518,7 @@ export default function Navbar() {
                                   </svg>
                                 ) : dropdownItem.title === 'Locations' ? (
                                   <svg 
-                                    className="w-6 h-6 text-[#fbbf24] shrink-0" 
+                                    className="w-6 h-6 text-[#228B22] shrink-0" 
                                     viewBox="0 0 24 24" 
                                     fill="none" 
                                     stroke="currentColor"
@@ -532,7 +532,7 @@ export default function Navbar() {
                                   </svg>
                                 ) : dropdownItem.title === 'Contact' ? (
                                   <svg 
-                                    className="w-6 h-6 text-[#fbbf24] shrink-0" 
+                                    className="w-6 h-6 text-[#228B22] shrink-0" 
                                     viewBox="0 0 24 24" 
                                     fill="none" 
                                     stroke="currentColor"
@@ -546,7 +546,7 @@ export default function Navbar() {
                                   </svg>
                                 ) : (
                                   <svg 
-                                    className="w-12 h-12 text-[#fbbf24] shrink-0" 
+                                    className="w-12 h-12 text-[#228B22] shrink-0" 
                                     viewBox="0 0 24 24" 
                                     fill="none" 
                                     stroke="currentColor"
@@ -598,22 +598,22 @@ export default function Navbar() {
           {/* Right Side Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="/login"
-              className="bg-black border border-[#fbbf24] hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-[#fbbf24]/20"
+              href="http://control.oozecloud.com/"
+              className="bg-black border border-[#228B22] hover:bg-[#228B22] text-[#228B22] hover:text-black px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-[#228B22]/20"
             >
-              LOGIN
+              Dashboard
             </Link>
             <Link
-              href="/register"
-              className="bg-black border border-[#fbbf24] hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-[#fbbf24]/20"
+              href="https://client.oozecloud.com/"
+              className="bg-black border border-[#228B22] hover:bg-[#228B22] text-[#228B22] hover:text-black px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-[#228B22]/20"
             >
-              REGISTER
+              Billing
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-400 hover:text-[#fbbf24] transition-colors duration-300 mobile-menu-button"
+            className="md:hidden text-gray-400 hover:text-[#228B22] transition-colors duration-300 mobile-menu-button"
             onClick={handleMobileMenuToggle}
             aria-label="Toggle mobile menu"
           >
@@ -630,20 +630,20 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`mobile-menu md:hidden bg-[#0B0E14] border-t border-[#fbbf24]/10 overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`mobile-menu md:hidden bg-[#0B0E14] border-t border-[#228B22]/10 overflow-hidden transition-all duration-300 ease-in-out ${
             isMobileMenuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'
           }`}
           onClick={(e) => e.stopPropagation()}
         >
           <div className="px-4 py-2 space-y-2 overflow-y-auto max-h-[calc(80vh-4rem)]">
             {navItems.map((item) => (
-              <div key={item.title} className="border-b border-[#fbbf24]/10 last:border-b-0">
+              <div key={item.title} className="border-b border-[#228B22]/10 last:border-b-0">
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     handleDropdownToggle(activeDropdown === item.title ? null : item.title, e);
                   }}
-                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:text-[#fbbf24] transition-colors duration-200"
+                  className="w-full flex items-center justify-between px-4 py-3 text-white hover:text-[#228B22] transition-colors duration-200"
                 >
                   <span className="text-lg font-medium">{item.title}</span>
                   {item.hasDropdown && (
@@ -669,11 +669,11 @@ export default function Navbar() {
                           e.stopPropagation();
                           handleLinkClick();
                         }}
-                        className="block px-8 py-3 text-gray-300 hover:text-white hover:bg-[#fbbf24]/5 transition-all duration-200"
+                        className="block px-8 py-3 text-gray-300 hover:text-white hover:bg-[#228B22]/5 transition-all duration-200"
                       >
                         <div className="flex items-center space-x-3">
                           {dropdownItem.icon && (
-                            <div className="p-2 bg-[#fbbf24]/10 rounded-lg">
+                            <div className="p-2 bg-[#228B22]/10 rounded-lg">
                               {dropdownItem.icon}
                             </div>
                           )}
@@ -695,14 +695,14 @@ export default function Navbar() {
             ))}
             
             {/* Mobile Menu Buttons */}
-            <div className="grid grid-cols-2 gap-4 px-4 py-4 border-t border-[#fbbf24]/10">
+            <div className="grid grid-cols-2 gap-4 px-4 py-4 border-t border-[#228B22]/10">
               <Link
                 href="/login"
                 onClick={(e) => {
                   e.stopPropagation();
                   handleLinkClick();
                 }}
-                className="bg-black border border-[#fbbf24] hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black px-4 py-2 rounded-lg text-center text-sm font-medium transition-all duration-300"
+                className="bg-black border border-[#228B22] hover:bg-[#228B22] text-[#228B22] hover:text-black px-4 py-2 rounded-lg text-center text-sm font-medium transition-all duration-300"
               >
                 LOGIN
               </Link>
@@ -712,7 +712,7 @@ export default function Navbar() {
                   e.stopPropagation();
                   handleLinkClick();
                 }}
-                className="bg-black border border-[#fbbf24] hover:bg-[#fbbf24] text-[#fbbf24] hover:text-black px-4 py-2 rounded-lg text-center text-sm font-medium transition-all duration-300"
+                className="bg-black border border-[#228B22] hover:bg-[#228B22] text-[#228B22] hover:text-black px-4 py-2 rounded-lg text-center text-sm font-medium transition-all duration-300"
               >
                 REGISTER
               </Link>

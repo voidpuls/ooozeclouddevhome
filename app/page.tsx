@@ -61,9 +61,9 @@ export default function Home() {
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black"></div>
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#fbbf24] rounded-full blur-[128px] opacity-20"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[400px] bg-[#fbbf24] rounded-full blur-[128px] opacity-10"></div>
-          <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-[#fbbf24] rounded-full blur-[128px] opacity-10"></div>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#228B22] rounded-full blur-[128px] opacity-20"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[400px] bg-[#228B22] rounded-full blur-[128px] opacity-10"></div>
+          <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-[#228B22] rounded-full blur-[128px] opacity-10"></div>
         </div>
         
         <div className="relative z-10 max-w-[90%] w-full">
@@ -72,13 +72,13 @@ export default function Home() {
             <div className="flex-1 space-y-8">
               <div className="space-y-4">
                 <div className="inline-block">
-                  <span className="bg-gradient-to-r from-[#fbbf24] to-[#fbbf24] text-transparent bg-clip-text text-lg font-medium">
+                  <span className="bg-gradient-to-r from-[#228B22] to-[#228B22] text-transparent bg-clip-text text-lg font-medium">
                     GAME SERVER HOSTING
                   </span>
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
                   Level Up Your
-                  <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#fbbf24] via-orange-500 to-[#fbbf24]">
+                  <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#228B22] via-orange-500 to-[#228B22]">
                     Gaming Experience
                   </span>
                 </h1>
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   href="/games"
-                  className="relative group overflow-hidden rounded-lg bg-gradient-to-r from-[#fbbf24] via-orange-500 to-[#fbbf24] p-[1px]"
+                  className="relative group overflow-hidden rounded-lg bg-gradient-to-r from-[#228B22] via-orange-500 to-[#228B22] p-[1px]"
                 >
                   <div className="relative bg-black group-hover:bg-opacity-0 rounded-lg px-6 py-3 transition-all duration-200">
                     <span className="relative z-10 text-white font-medium">Start Hosting</span>
@@ -101,15 +101,15 @@ export default function Home() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/5">
                 <div>
-                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fbbf24] to-orange-500">99.9%</div>
+                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#228B22] to-orange-500">99.9%</div>
                   <div className="text-gray-500 text-sm mt-1">Uptime</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-[#fbbf24]">15ms</div>
+                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-[#228B22]">15ms</div>
                   <div className="text-gray-500 text-sm mt-1">Avg. Latency</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fbbf24] to-orange-500">24/7</div>
+                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#228B22] to-orange-500">24/7</div>
                   <div className="text-gray-500 text-sm mt-1">Support</div>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function Home() {
                 {games.slice(0, 9).map((game, i) => (
                   <div
                     key={i}
-                    className="group relative bg-gradient-to-r from-[#fbbf24]/10 to-orange-500/10 rounded-lg p-[1px] transform transition-transform hover:scale-105"
+                    className="group relative bg-gradient-to-r from-[#228B22]/10 to-orange-500/10 rounded-lg p-[1px] transform transition-transform hover:scale-105"
                   >
                     <div className="relative bg-black/80 rounded-lg h-full w-full overflow-hidden">
                       <Image
@@ -135,7 +135,7 @@ export default function Home() {
                         <h3 className="text-sm text-white font-medium truncate">{game.name}</h3>
                       </div>
                       <div className="absolute top-2 left-2">
-                        <div className="h-2 w-2 rounded-full bg-gradient-to-r from-[#fbbf24] to-orange-500 animate-pulse"></div>
+                        <div className="h-2 w-2 rounded-full bg-gradient-to-r from-[#228B22] to-orange-500 animate-pulse"></div>
                       </div>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function Home() {
             {games.map((game, index) => (
               <div 
                 key={index}
-                className="group relative bg-gradient-to-r from-[#fbbf24]/10 to-orange-500/10 rounded-xl p-[1px] hover:from-[#fbbf24] hover:to-orange-500 transition-all duration-300"
+                className="group relative bg-gradient-to-r from-[#228B22]/10 to-orange-500/10 rounded-xl p-[1px] hover:from-[#228B22] hover:to-orange-500 transition-all duration-300"
               >
                 <div className="relative bg-black rounded-xl overflow-hidden">
                   <div className="relative h-48">
@@ -175,7 +175,7 @@ export default function Home() {
                     <p className="text-gray-400 mb-4">{game.description}</p>
                     <Link 
                       href={`/games/${game.name === "Garry's Mod" ? 'garrys-mod' : game.name.toLowerCase().replace(/\s+/g, '-').replace(/:/g, '').replace(/\./g, '')}`}
-                      className="inline-flex items-center text-[#fbbf24] hover:text-orange-500 transition-colors"
+                      className="inline-flex items-center text-[#228B22] hover:text-orange-500 transition-colors"
                     >
                       Deploy Now
                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -203,14 +203,14 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Side - Datacenter Info */}
             <div className="space-y-8">
-              <div className="relative bg-gradient-to-r from-[#fbbf24]/10 to-orange-500/10 rounded-xl p-[1px]">
+              <div className="relative bg-gradient-to-r from-[#228B22]/10 to-orange-500/10 rounded-xl p-[1px]">
                 <div className="bg-black rounded-xl p-8">
                   <h3 className="text-2xl font-bold text-white mb-6">Tier 4 Datacenter Features</h3>
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#fbbf24] to-orange-500 p-[1px]">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#228B22] to-orange-500 p-[1px]">
                         <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
-                          <svg className="w-6 h-6 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-6 h-6 text-[#228B22]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                           </svg>
                         </div>
@@ -222,9 +222,9 @@ export default function Home() {
                     </div>
 
                     <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#fbbf24] to-orange-500 p-[1px]">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#228B22] to-orange-500 p-[1px]">
                         <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
-                          <svg className="w-6 h-6 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-6 h-6 text-[#228B22]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                           </svg>
                         </div>
@@ -236,9 +236,9 @@ export default function Home() {
                     </div>
 
                     <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#fbbf24] to-orange-500 p-[1px]">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#228B22] to-orange-500 p-[1px]">
                         <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
-                          <svg className="w-6 h-6 text-[#fbbf24]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-6 h-6 text-[#228B22]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                           </svg>
                         </div>
@@ -252,7 +252,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative bg-gradient-to-r from-[#fbbf24]/10 to-orange-500/10 rounded-xl p-[1px]">
+              <div className="relative bg-gradient-to-r from-[#228B22]/10 to-orange-500/10 rounded-xl p-[1px]">
                 <div className="bg-black rounded-xl p-8">
                   <h3 className="text-2xl font-bold text-white mb-6">Network Capabilities</h3>
                   <div className="space-y-4">

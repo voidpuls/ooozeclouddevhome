@@ -10,7 +10,7 @@ const preloadImages = [
 ];
 
 export const metadata: Metadata = {
-  title: 'VPS Hosting - LIQUID',
+  title: 'VPS Hosting - OozeCloud',
   description: 'High-performance VPS hosting with full root access, instant deployment, and 24/7 support.',
 };
 
