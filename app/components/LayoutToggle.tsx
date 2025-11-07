@@ -31,7 +31,7 @@ export default function LayoutToggle({ onLayoutChange }: LayoutToggleProps) {
           onClick={() => handleLayoutChange(false)}
           className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
             !isHorizontal
-              ? 'bg-[#228B22] text-white hover:bg-[#f59e0b]'
+              ? 'bg-[#28a745] text-white hover:bg-[#f59e0b]'
               : 'text-gray-400 hover:text-white'
           }`}
         >
@@ -41,7 +41,7 @@ export default function LayoutToggle({ onLayoutChange }: LayoutToggleProps) {
           onClick={() => handleLayoutChange(true)}
           className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
             isHorizontal
-              ? 'bg-[#228B22] text-white hover:bg-[#f59e0b]'
+              ? 'bg-[#28a745] text-white hover:bg-[#f59e0b]'
               : 'text-gray-400 hover:text-white'
           }`}
         >

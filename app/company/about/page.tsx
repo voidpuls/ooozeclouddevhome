@@ -177,7 +177,7 @@ export default function AboutUs() {
             <p className="text-white/90 mb-6 max-w-2xl mx-auto">
               Join the ranks of forward-thinking companies who trust OozeCloud with their digital future.
             </p>
-            <Link href="/register">
+            <Link href="https://client.oozecloud.com/">
               <button className="px-8 py-3 bg-black text-amber-400 rounded-lg font-medium hover:bg-gray-900 transition-colors">
                 Begin Your Journey
               </button>

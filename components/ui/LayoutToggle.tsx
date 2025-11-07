@@ -1,1 +1,1 @@
-: 'bg-[#228B22] text-white hover:bg-[#f59e0b]' 
+: 'bg-[#28a745] text-white hover:bg-[#f59e0b]' 

@@ -37,25 +37,25 @@ $navItems = [
 ];
 @endphp
 
-<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 {{ request()->is('/') ? '' : 'bg-[#0B0E14]/95 backdrop-blur-md shadow-lg border-b border-[#228B22]/10' }}">
+<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 {{ request()->is('/') ? '' : 'bg-[#0B0E14]/95 backdrop-blur-md shadow-lg border-b border-[#28a745]/10' }}">
     <div class="w-full mx-auto flex items-center justify-between px-6 py-4">
         {{-- Logo Section --}}
         <div class="flex items-center space-x-8">
             <a href="/" class="group flex items-center">
-                <h1 class="text-[#228B22] text-3xl font-bold tracking-tight group-hover:text-white transition-all duration-300 transform group-hover:scale-105">
+                <h1 class="text-[#28a745] text-3xl font-bold tracking-tight group-hover:text-white transition-all duration-300 transform group-hover:scale-105">
                     OozeCloud
                 </h1>
             </a>
 
             {{-- Announcement Bar --}}
             <div class="hidden md:flex items-center space-x-6">
-                <div class="flex items-center space-x-2 px-4 py-1 bg-[#228B22]/10 rounded-full">
+                <div class="flex items-center space-x-2 px-4 py-1 bg-[#28a745]/10 rounded-full">
                     <span class="flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#228B22] opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#228B22]"></span>
+                        <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#28a745] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#28a745]"></span>
                     </span>
-                    <span class="text-[#228B22] text-sm">New servers available!</span>
-                    <span class="text-white bg-[#228B22] px-2 py-0.5 text-xs rounded-full">5</span>
+                    <span class="text-[#28a745] text-sm">New servers available!</span>
+                    <span class="text-white bg-[#28a745] px-2 py-0.5 text-xs rounded-full">5</span>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@ $navItems = [
             @foreach($navItems as $item)
                 <div class="relative group" x-data="{ open: false }" @mouseleave="open = false">
                     <a href="{{ $item['url'] }}" 
-                       class="px-4 py-2 text-white hover:text-[#228B22] transition-colors duration-200 flex items-center space-x-1"
+                       class="px-4 py-2 text-white hover:text-[#28a745] transition-colors duration-200 flex items-center space-x-1"
                        @mouseenter="open = {{ $item['hasDropdown'] ? 'true' : 'false' }}"
                        @click.prevent="{{ $item['hasDropdown'] ? 'open = !open' : '' }}">
                         <span>{{ $item['title'] }}</span>
@@ -77,7 +77,7 @@ $navItems = [
                             </svg>
                         @endif
                         @if(isset($item['hasUpdate']) && $item['hasUpdate'])
-                            <span class="ml-2 px-2 py-0.5 text-xs bg-[#228B22] text-black rounded-full">
+                            <span class="ml-2 px-2 py-0.5 text-xs bg-[#28a745] text-black rounded-full">
                                 UPDATE
                             </span>
                         @endif
@@ -88,7 +88,7 @@ $navItems = [
                              x-transition:enter="transition ease-out duration-200"
                              x-transition:enter-start="opacity-0 transform scale-95"
                              x-transition:enter-end="opacity-100 transform scale-100"
-                             class="absolute mt-0 bg-[#0B0E14] border border-[#228B22]/10 rounded-lg shadow-xl"
+                             class="absolute mt-0 bg-[#0B0E14] border border-[#28a745]/10 rounded-lg shadow-xl"
                              :class="{
                                 'w-[800px] p-4 -translate-x-1/2 left-1/2': '{{ $item['title'] }}' === 'Game Servers',
                                 'w-[200px] -translate-x-1/4 left-1/2': '{{ $item['title'] }}' === 'Other',
@@ -112,13 +112,13 @@ $navItems = [
                 </svg>
             </a>
             <a href="/login"
-               class="bg-[#228B22] hover:bg-[#f59e0b] text-black px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-[#228B22]/20">
+               class="bg-[#28a745] hover:bg-[#f59e0b] text-black px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-[#28a745]/20">
                 LOGIN
             </a>
         </div>
 
         {{-- Mobile Menu Button --}}
-        <button class="md:hidden text-gray-400 hover:text-[#228B22] transition-colors duration-300"
+        <button class="md:hidden text-gray-400 hover:text-[#28a745] transition-colors duration-300"
                 x-data="{ open: false }"
                 @click="open = !open">
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

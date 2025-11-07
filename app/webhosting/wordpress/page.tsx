@@ -11,7 +11,7 @@ const features: BentoItem[] = [
   {
     title: "WordPress LiteSpeed Cache",
     description: "Built-in WordPress caching with LiteSpeed Cache plugin, image optimization, and page preloading for blazing fast performance.",
-    icon: <Zap className="w-5 h-5 text-[#228B22]" />,
+    icon: <Zap className="w-5 h-5 text-[#28a745]" />,
     status: "Premium",
     tags: ["WordPress", "Fast", "Optimized"],
     colSpan: 1,
@@ -20,7 +20,7 @@ const features: BentoItem[] = [
   {
     title: "Automatic Backup",
     description: "Daily automatic backups for your WordPress site with one-click restore functionality.",
-    icon: <Shield className="w-5 h-5 text-[#228B22]" />,
+    icon: <Shield className="w-5 h-5 text-[#28a745]" />,
     status: "Daily",
     tags: ["Backup", "Secure"],
     colSpan: 1,
@@ -28,7 +28,7 @@ const features: BentoItem[] = [
   {
     title: "Free Themes",
     description: "Premium WordPress themes and customization tools to easily design your site.",
-    icon: <Palette className="w-5 h-5 text-[#228B22]" />,
+    icon: <Palette className="w-5 h-5 text-[#28a745]" />,
     status: "Premium",
     tags: ["Design", "Custom"],
     colSpan: 1,
@@ -36,7 +36,7 @@ const features: BentoItem[] = [
   {
     title: "Free SSL",
     description: "Secure your site with Let's Encrypt SSL certificate included for free.",
-    icon: <Lock className="w-5 h-5 text-[#228B22]" />,
+    icon: <Lock className="w-5 h-5 text-[#28a745]" />,
     status: "Secure",
     tags: ["Security", "Free"],
     colSpan: 1,
@@ -44,7 +44,7 @@ const features: BentoItem[] = [
   {
     title: "Easy Management",
     description: "Manage your site easily with cPanel and WordPress admin panel.",
-    icon: <Server className="w-5 h-5 text-[#228B22]" />,
+    icon: <Server className="w-5 h-5 text-[#28a745]" />,
     status: "Easy",
     tags: ["Management", "cPanel"],
     colSpan: 1,
@@ -52,7 +52,7 @@ const features: BentoItem[] = [
   {
     title: "24/7 Support",
     description: "24/7 technical support and custom development assistance from WordPress experts.",
-    icon: <Clock className="w-5 h-5 text-[#228B22]" />,
+    icon: <Clock className="w-5 h-5 text-[#28a745]" />,
     status: "24/7",
     tags: ["Support", "Expert"],
     colSpan: 1,
@@ -201,8 +201,8 @@ export default function WordPressHosting() {
             onClick={() => handleCountrySelect(code)}
             className={`relative group p-6 rounded-xl border-2 transition-all duration-300 min-w-[200px] ${
               selectedCountry === code
-                ? 'border-[#228B22] bg-[#228B22]/10'
-                : 'border-gray-800 hover:border-[#228B22]/50 hover:bg-[#228B22]/5'
+                ? 'border-[#28a745] bg-[#28a745]/10'
+                : 'border-gray-800 hover:border-[#28a745]/50 hover:bg-[#28a745]/5'
             }`}
           >
             <div className="flex flex-col items-center">
@@ -218,7 +218,7 @@ export default function WordPressHosting() {
               <span className="text-base text-gray-400">{data.name}</span>
               {selectedCountry === code && (
                 <div className="absolute -top-3 -right-3">
-                  <div className="w-6 h-6 bg-[#228B22] rounded-full flex items-center justify-center">
+                  <div className="w-6 h-6 bg-[#28a745] rounded-full flex items-center justify-center">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
@@ -314,7 +314,7 @@ export default function WordPressHosting() {
                 animationDuration: `${5 + Math.random() * 5}s`
               }}
             >
-              <div className="w-2 h-2 bg-[#228B22]/10 rounded-full blur-sm"></div>
+              <div className="w-2 h-2 bg-[#28a745]/10 rounded-full blur-sm"></div>
             </div>
           ))}
         </div>
@@ -329,15 +329,15 @@ export default function WordPressHosting() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
               {/* Left Content */}
               <div className="flex-1 text-center lg:text-left">
-                <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#228B22]/10 text-[#228B22] text-sm font-medium mb-6">
-                  <span className="w-2 h-2 rounded-full bg-[#228B22] animate-pulse mr-2"></span>
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#28a745]/10 text-[#28a745] text-sm font-medium mb-6">
+                  <span className="w-2 h-2 rounded-full bg-[#28a745] animate-pulse mr-2"></span>
                   WordPress Hosting
                 </div>
                 <h1 className="text-4xl lg:text-7xl font-bold mb-6 tracking-tight leading-none">
                   The Best Hosting for
                   <span className="relative">
-                    <span className="relative z-10 text-[#228B22]"> WordPress Sites</span>
-                    <span className="absolute bottom-0 left-0 w-full h-2 bg-[#228B22]/20 rounded-full blur-sm"></span>
+                    <span className="relative z-10 text-[#28a745]"> WordPress Sites</span>
+                    <span className="absolute bottom-0 left-0 w-full h-2 bg-[#28a745]/20 rounded-full blur-sm"></span>
                   </span>
                 </h1>
                 <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
@@ -353,9 +353,9 @@ export default function WordPressHosting() {
                     { value: "24/7", label: "Support" }
                   ].map((stat, index) => (
                     <div key={index} className="relative group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-[#228B22]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#28a745]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
                       <div className="relative text-center">
-                        <div className="text-2xl font-bold text-[#228B22] mb-1">{stat.value}</div>
+                        <div className="text-2xl font-bold text-[#28a745] mb-1">{stat.value}</div>
                         <div className="text-sm text-gray-400">{stat.label}</div>
                       </div>
                     </div>
@@ -367,7 +367,7 @@ export default function WordPressHosting() {
               <div className="flex-1 w-full max-w-xl">
                 <div className="relative">
                   {/* Terminal Glow Effect */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#228B22] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#28a745] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
                   
                   <div className="relative bg-black rounded-xl overflow-hidden border border-gray-800/50">
                     {/* Terminal Header */}
@@ -387,7 +387,7 @@ export default function WordPressHosting() {
                     <div className="p-4 font-mono text-sm">
                       <div className="space-y-2">
                         <div className="flex items-center text-gray-400">
-                          <span className="text-[#228B22]">$</span>
+                          <span className="text-[#28a745]">$</span>
                           <span className="ml-2 typing-animation">wp core download</span>
                         </div>
                         <div className="pl-4">
@@ -417,7 +417,7 @@ export default function WordPressHosting() {
                               </svg>
                               <span>wp-config.php created</span>
                             </div>
-                            <div className="flex items-center text-[#228B22]">
+                            <div className="flex items-center text-[#28a745]">
                               <span className="w-4 h-4 mr-2 animate-pulse">⚡</span>
                               <span>Installing LiteSpeed Cache...</span>
                             </div>
@@ -431,10 +431,10 @@ export default function WordPressHosting() {
                       <div className="space-y-2">
                         <div className="flex justify-between text-xs">
                           <span className="text-gray-400">Progress</span>
-                          <span className="text-[#228B22]">75%</span>
+                          <span className="text-[#28a745]">75%</span>
                         </div>
                         <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
-                          <div className="h-full bg-[#228B22] w-[75%] rounded-full"></div>
+                          <div className="h-full bg-[#28a745] w-[75%] rounded-full"></div>
                         </div>
                       </div>
                     </div>
@@ -449,13 +449,13 @@ export default function WordPressHosting() {
         <div className="py-24">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#228B22]/10 text-[#228B22] text-sm font-medium mb-6">
-                <span className="w-2 h-2 rounded-full bg-[#228B22] mr-2"></span>
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#28a745]/10 text-[#28a745] text-sm font-medium mb-6">
+                <span className="w-2 h-2 rounded-full bg-[#28a745] mr-2"></span>
                 WordPress Features
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Everything You Need for Your 
-                <span className="text-[#228B22]"> WordPress Site</span>
+                <span className="text-[#28a745]"> WordPress Site</span>
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 Powerful features designed to make your WordPress site fast, secure, and easy to manage.
@@ -473,13 +473,13 @@ export default function WordPressHosting() {
         <div id="pricing-section" className="py-24 relative">
           <div className="max-w-7xl mx-auto px-4 relative">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#228B22]/10 text-[#228B22] text-sm font-medium mb-6">
-                <span className="w-2 h-2 rounded-full bg-[#228B22] mr-2"></span>
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#28a745]/10 text-[#28a745] text-sm font-medium mb-6">
+                <span className="w-2 h-2 rounded-full bg-[#28a745] mr-2"></span>
                 WordPress Hosting Plans
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Choose Your 
-                <span className="text-[#228B22]"> WordPress Plan</span>
+                <span className="text-[#28a745]"> WordPress Plan</span>
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 Select the perfect plan for your WordPress site with our flexible hosting options.
@@ -488,20 +488,20 @@ export default function WordPressHosting() {
 
             {/* Pricing Toggle */}
             <div className="flex justify-center items-center space-x-4 mb-12">
-              <span className={`text-sm ${billingPeriod === 'monthly' ? 'text-[#228B22]' : 'text-gray-400'}`}>Monthly</span>
+              <span className={`text-sm ${billingPeriod === 'monthly' ? 'text-[#28a745]' : 'text-gray-400'}`}>Monthly</span>
               <button
                 onClick={() => setBillingPeriod(billingPeriod === 'monthly' ? 'yearly' : 'monthly')}
                 className={`relative w-14 h-7 rounded-full transition-colors duration-300 focus:outline-none
-                  ${billingPeriod === 'yearly' ? 'bg-[#228B22]' : 'bg-gray-700'}`}
+                  ${billingPeriod === 'yearly' ? 'bg-[#28a745]' : 'bg-gray-700'}`}
               >
                 <div
                   className={`absolute w-5 h-5 bg-white rounded-full top-1 transition-transform duration-300
                     ${billingPeriod === 'yearly' ? 'translate-x-8' : 'translate-x-1'}`}
                 ></div>
               </button>
-              <span className={`text-sm ${billingPeriod === 'yearly' ? 'text-[#228B22]' : 'text-gray-400'}`}>
+              <span className={`text-sm ${billingPeriod === 'yearly' ? 'text-[#28a745]' : 'text-gray-400'}`}>
                 Yearly
-                <span className="ml-1 text-xs text-[#228B22]">Save 20%</span>
+                <span className="ml-1 text-xs text-[#28a745]">Save 20%</span>
               </span>
             </div>
 
@@ -512,13 +512,13 @@ export default function WordPressHosting() {
                   key={index}
                   className={`relative rounded-2xl p-8 ${
                     plan.isPopular
-                      ? 'bg-gradient-to-b from-[#228B22]/20 to-transparent border-2 border-[#228B22]'
+                      ? 'bg-gradient-to-b from-[#28a745]/20 to-transparent border-2 border-[#28a745]'
                       : 'bg-black border border-gray-800'
                   }`}
                 >
                   {plan.isPopular && (
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <div className="bg-[#228B22] text-black text-sm font-medium px-3 py-1 rounded-full">
+                      <div className="bg-[#28a745] text-black text-sm font-medium px-3 py-1 rounded-full">
                         Most Popular
                       </div>
                     </div>
@@ -539,7 +539,7 @@ export default function WordPressHosting() {
                   <ul className="space-y-4 mb-8">
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-sm">
-                        <svg className="w-5 h-5 text-[#228B22] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-[#28a745] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         {feature}
@@ -550,7 +550,7 @@ export default function WordPressHosting() {
                   <button
                     className={`w-full py-3 px-4 rounded-xl font-medium transition-all duration-300 ${
                       plan.isPopular
-                        ? 'bg-[#228B22] text-black hover:bg-[#f59e0b]'
+                        ? 'bg-[#28a745] text-black hover:bg-[#f59e0b]'
                         : 'bg-gray-800 text-white hover:bg-gray-700'
                     }`}
                   >
@@ -606,9 +606,9 @@ export default function WordPressHosting() {
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                     className="w-full px-6 py-4 flex items-center justify-between text-left"
                   >
-                    <h3 className="text-xl font-bold text-[#228B22]">{faq.question}</h3>
+                    <h3 className="text-xl font-bold text-[#28a745]">{faq.question}</h3>
                     <svg 
-                      className={`w-6 h-6 text-[#228B22] transform transition-transform duration-200 ${openFaq === index ? 'rotate-180' : ''}`} 
+                      className={`w-6 h-6 text-[#28a745] transform transition-transform duration-200 ${openFaq === index ? 'rotate-180' : ''}`} 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"

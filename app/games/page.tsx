@@ -341,15 +341,15 @@ export default function Games() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div className="absolute inset-0r from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#28a745]/50 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#28a745]/50 to-transparent"></div>
       </div>
 
       {/* Hero Section with Stats */}
       <div className="relative pt-24 pb-16 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <div className="relative z-10 text-center">
-            <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#228B22] via-orange-500 to-[#228B22] mb-6 tracking-tight">
+            <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#28a745] via-orange-500 to-[#28a745] mb-6 tracking-tight">
               Game Servers
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12">
@@ -360,19 +360,19 @@ export default function Games() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <div className="text-3xl font-bold text-[#228B22] mb-2">{baseGames.length}+</div>
+                <div className="text-3xl font-bold text-[#28a745] mb-2">{baseGames.length}+</div>
                 <div className="text-gray-400">Games Available</div>
               </div>
               <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <div className="text-3xl font-bold text-[#228B22] mb-2">99.9%</div>
+                <div className="text-3xl font-bold text-[#28a745] mb-2">99.9%</div>
                 <div className="text-gray-400">Uptime</div>
               </div>
               <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <div className="text-3xl font-bold text-[#228B22] mb-2">24/7</div>
+                <div className="text-3xl font-bold text-[#28a745] mb-2">24/7</div>
                 <div className="text-gray-400">Support</div>
               </div>
               <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                <div className="text-3xl font-bold text-[#228B22] mb-2">1-Click</div>
+                <div className="text-3xl font-bold text-[#28a745] mb-2">1-Click</div>
                 <div className="text-gray-400">Deployment</div>
               </div>
             </div>
@@ -383,7 +383,7 @@ export default function Games() {
       {/* Search and Filters */}
       <div className="max-w-7xl mx-auto px-4 mb-12">
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#228B22]/10 to-orange-500/10 rounded-2xl blur-xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#28a745]/10 to-orange-500/10 rounded-2xl blur-xl"></div>
           <div className="relative bg-gray-900/40 backdrop-blur-xl rounded-2xl border border-white/10 p-8">
             <div className="flex flex-col gap-6">
               {/* Search and Filter Toggle */}
@@ -393,7 +393,7 @@ export default function Games() {
                     <input
                       type="text"
                       placeholder="Search games..."
-                      className="w-full px-5 py-4 bg-black/30 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-[#228B22] focus:border-transparent transition-all"
+                      className="w-full px-5 py-4 bg-black/30 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-[#28a745] focus:border-transparent transition-all"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                     />
@@ -411,7 +411,7 @@ export default function Games() {
                   </svg>
                   Filters
                   {(selectedCategory || priceRange[0] > 0 || priceRange[1] < 30) && (
-                    <span className="w-2 h-2 rounded-full bg-[#228B22]"></span>
+                    <span className="w-2 h-2 rounded-full bg-[#28a745]"></span>
                   )}
                 </button>
               </div>
@@ -427,7 +427,7 @@ export default function Games() {
                         onClick={() => setSelectedCategory(null)}
                         className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                           selectedCategory === null
-                            ? 'bg-gradient-to-r from-[#228B22] to-orange-500 text-black shadow-lg shadow-orange-500/20'
+                            ? 'bg-gradient-to-r from-[#28a745] to-orange-500 text-black shadow-lg shadow-orange-500/20'
                             : 'bg-black/30 text-gray-400 hover:bg-black/50 border border-white/10'
                         }`}
                       >
@@ -439,7 +439,7 @@ export default function Games() {
                           onClick={() => setSelectedCategory(selectedCategory === key ? null : key)}
                           className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                             selectedCategory === key
-                              ? 'bg-gradient-to-r from-[#228B22] to-orange-500 text-black shadow-lg shadow-orange-500/20'
+                              ? 'bg-gradient-to-r from-[#28a745] to-orange-500 text-black shadow-lg shadow-orange-500/20'
                               : 'bg-black/30 text-gray-400 hover:bg-black/50 border border-white/10'
                           }`}
                         >
@@ -460,7 +460,7 @@ export default function Games() {
                         step="5"
                         value={priceRange[1]}
                         onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-                        className="w-full h-2 bg-black/30 rounded-lg appearance-none cursor-pointer accent-[#228B22]"
+                        className="w-full h-2 bg-black/30 rounded-lg appearance-none cursor-pointer accent-[#28a745]"
                       />
                       <div className="flex justify-between text-sm text-gray-400 mt-2">
                         <span>€0</span>
@@ -501,8 +501,8 @@ export default function Games() {
                 onMouseEnter={() => setActiveGame(game.name)}
                 onMouseLeave={() => setActiveGame(null)}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-[#228B22]/20 to-orange-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative bg-gray-900/40 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:border-[#228B22]/50 transition-all duration-300 flex flex-col flex-1">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#28a745]/20 to-orange-500/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative bg-gray-900/40 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden hover:border-[#28a745]/50 transition-all duration-300 flex flex-col flex-1">
                   <div className="relative h-56">
                     <Image
                       src={game.image}
@@ -512,10 +512,10 @@ export default function Games() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 right-4">
-                      <h3 className="text-2xl font-bold text-white group-hover:text-[#228B22] transition-colors">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-[#28a745] transition-colors">
                         {game.name}
                       </h3>
-                      <div className="text-xl font-bold text-[#228B22]">
+                      <div className="text-xl font-bold text-[#28a745]">
                         €{game.basePrice.toFixed(2)}
                         <span className="text-sm text-gray-400 ml-2">/month</span>
                       </div>
@@ -527,7 +527,7 @@ export default function Games() {
                     {/* Tags */}
                     <div className="flex flex-wrap gap-2 mb-4">
                       {game.categories.map((category) => (
-                        <span key={category} className="px-3 py-1 bg-gradient-to-r from-[#228B22]/10 to-orange-500/10 text-[#228B22] text-sm rounded-full border border-[#228B22]/20">
+                        <span key={category} className="px-3 py-1 bg-gradient-to-r from-[#28a745]/10 to-orange-500/10 text-[#28a745] text-sm rounded-full border border-[#28a745]/20">
                           {gameCategories[category as keyof typeof gameCategories]}
                         </span>
                       ))}
@@ -542,7 +542,7 @@ export default function Games() {
                     <ul className="space-y-2 mb-6 flex-1">
                       {game.features.map((feature) => (
                         <li key={feature} className="flex items-center text-gray-400">
-                          <svg className="w-5 h-5 text-[#228B22] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-5 h-5 text-[#28a745] mr-2 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
                           {feature}
@@ -552,7 +552,7 @@ export default function Games() {
 
                     <Link
                       href={`/games/${game.name.toLowerCase().replace(/[:']/g, '').replace(/\s+/g, '-')}`}
-                      className="block w-full text-center bg-gradient-to-r from-[#228B22] to-orange-500 text-black font-semibold py-3 px-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 hover:-translate-y-0.5 mt-auto"
+                      className="block w-full text-center bg-gradient-to-r from-[#28a745] to-orange-500 text-black font-semibold py-3 px-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20 hover:-translate-y-0.5 mt-auto"
                     >
                       View Details
                     </Link>

@@ -213,7 +213,7 @@ const features = [
       "SSD Depolama",
       "KVM Erişimi"
     ],
-    icon: <Cpu className="w-6 h-6 text-[#228B22]" />,
+    icon: <Cpu className="w-6 h-6 text-[#28a745]" />,
     value: "4 Core"
   },
   {
@@ -225,7 +225,7 @@ const features = [
       "Yedekleme Desteği",
       "Anlık Disk Yönetimi"
     ],
-    icon: <HardDrive className="w-6 h-6 text-[#228B22]" />,
+    icon: <HardDrive className="w-6 h-6 text-[#28a745]" />,
     value: "80GB"
   },
   {
@@ -237,7 +237,7 @@ const features = [
       "DDoS Koruması",
       "IPv4 Desteği"
     ],
-    icon: <Network className="w-6 h-6 text-[#228B22]" />,
+    icon: <Network className="w-6 h-6 text-[#28a745]" />,
     value: "1 Gbps"
   }
 ];
@@ -324,8 +324,8 @@ export default function BudgetVPSPage() {
                 isOutOfStock 
                   ? 'border-red-500/50 bg-red-500/5 opacity-75 cursor-not-allowed'
                   : selectedCountry === code
-                    ? 'border-[#228B22] bg-[#228B22]/10'
-                    : 'border-gray-800 hover:border-[#228B22]/50 hover:bg-[#228B22]/5'
+                    ? 'border-[#28a745] bg-[#28a745]/10'
+                    : 'border-gray-800 hover:border-[#28a745]/50 hover:bg-[#28a745]/5'
               }`}
             >
               <div className="flex flex-col items-center">
@@ -348,7 +348,7 @@ export default function BudgetVPSPage() {
                 )}
                 {selectedCountry === code && !isOutOfStock && (
                   <div className="absolute -top-3 -right-3">
-                    <div className="w-6 h-6 bg-[#228B22] rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-[#28a745] rounded-full flex items-center justify-center">
                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
@@ -499,7 +499,7 @@ export default function BudgetVPSPage() {
                   animationDuration: `${5 + Math.random() * 5}s`
                 }}
               >
-                <div className="w-2 h-2 bg-[#228B22]/10 rounded-full blur-sm"></div>
+                <div className="w-2 h-2 bg-[#28a745]/10 rounded-full blur-sm"></div>
               </div>
             ))}
           </div>
@@ -510,15 +510,15 @@ export default function BudgetVPSPage() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#228B22]/10 text-[#228B22] text-sm font-medium mb-6">
-                <span className="w-2 h-2 rounded-full bg-[#228B22] animate-pulse mr-2"></span>
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#28a745]/10 text-[#28a745] text-sm font-medium mb-6">
+                <span className="w-2 h-2 rounded-full bg-[#28a745] animate-pulse mr-2"></span>
                 Budget-Friendly VPS
               </div>
               <h1 className="text-4xl lg:text-7xl font-bold mb-6 tracking-tight leading-none">
                 Affordable VPS with
                 <span className="relative">
-                  <span className="relative z-10 text-[#228B22]"> SSD Storage</span>
-                  <span className="absolute bottom-0 left-0 w-full h-2 bg-[#228B22]/20 rounded-full blur-sm"></span>
+                  <span className="relative z-10 text-[#28a745]"> SSD Storage</span>
+                  <span className="absolute bottom-0 left-0 w-full h-2 bg-[#28a745]/20 rounded-full blur-sm"></span>
                 </span>
               </h1>
               <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
@@ -534,9 +534,9 @@ export default function BudgetVPSPage() {
                   { value: "<60s", label: "Deploy" }
                 ].map((stat, index) => (
                   <div key={index} className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#228B22]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#28a745]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
                     <div className="relative text-center">
-                      <div className="text-2xl font-bold text-[#228B22] mb-1">{stat.value}</div>
+                      <div className="text-2xl font-bold text-[#28a745] mb-1">{stat.value}</div>
                       <div className="text-sm text-gray-400">{stat.label}</div>
                     </div>
                   </div>
@@ -548,7 +548,7 @@ export default function BudgetVPSPage() {
             <div className="flex-1 w-full max-w-xl">
               <div className="relative">
                 {/* Terminal Glow Effect */}
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#228B22] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#28a745] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
                 
                 <div className="relative bg-black rounded-xl overflow-hidden border border-gray-800/50">
                   {/* Terminal Header */}
@@ -568,7 +568,7 @@ export default function BudgetVPSPage() {
                   <div className="p-4 font-mono text-sm">
                     <div className="space-y-2">
                       <div className="flex items-center text-gray-400">
-                        <span className="text-[#228B22]">$</span>
+                        <span className="text-[#28a745]">$</span>
                         <span className="ml-2 typing-animation">monitor --server budget-vps-01</span>
                       </div>
                       <div className="pl-4">
@@ -583,11 +583,11 @@ export default function BudgetVPSPage() {
                           <div className="space-y-2">
                             <div className="flex justify-between text-sm">
                               <span className="text-gray-400">CPU Usage</span>
-                              <span className="text-[#228B22]">{metrics.cpu}%</span>
+                              <span className="text-[#28a745]">{metrics.cpu}%</span>
                             </div>
                             <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
                               <div 
-                                className="h-full bg-[#228B22] rounded-full transition-all duration-500"
+                                className="h-full bg-[#28a745] rounded-full transition-all duration-500"
                                 style={{ width: `${metrics.cpu}%` }}
                               ></div>
                             </div>
@@ -595,11 +595,11 @@ export default function BudgetVPSPage() {
                           <div className="space-y-2">
                             <div className="flex justify-between text-sm">
                               <span className="text-gray-400">Memory Usage</span>
-                              <span className="text-[#228B22]">{metrics.memory}%</span>
+                              <span className="text-[#28a745]">{metrics.memory}%</span>
                             </div>
                             <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
                               <div 
-                                className="h-full bg-[#228B22] rounded-full transition-all duration-500"
+                                className="h-full bg-[#28a745] rounded-full transition-all duration-500"
                                 style={{ width: `${metrics.memory}%` }}
                               ></div>
                             </div>
@@ -607,11 +607,11 @@ export default function BudgetVPSPage() {
                           <div className="space-y-2">
                             <div className="flex justify-between text-sm">
                               <span className="text-gray-400">Network Usage</span>
-                              <span className="text-[#228B22]">{metrics.network} Mbps</span>
+                              <span className="text-[#28a745]">{metrics.network} Mbps</span>
                             </div>
                             <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
                               <div 
-                                className="h-full bg-[#228B22] rounded-full transition-all duration-500"
+                                className="h-full bg-[#28a745] rounded-full transition-all duration-500"
                                 style={{ width: `${(metrics.network / 70) * 100}%` }}
                               ></div>
                             </div>
@@ -667,7 +667,7 @@ All plans include SSD storage, DDoS protection, and 24/7 support.`}
                   {[...operatingSystems, ...operatingSystems, ...operatingSystems].map((os, index) => (
                     <div
                       key={`${os.name}-${index}`}
-                      className="flex-none w-44 bg-[#1a1d26] p-4 rounded-xl border border-gray-800 hover:border-[#228B22] transition-colors group"
+                      className="flex-none w-44 bg-[#1a1d26] p-4 rounded-xl border border-gray-800 hover:border-[#28a745] transition-colors group"
                     >
                       <div className="relative h-24 w-24 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                         <Image
@@ -726,9 +726,9 @@ All plans include SSD storage, DDoS protection, and 24/7 support.`}
                   onClick={() => toggleFaq(index)}
                   className="w-full px-6 py-4 text-left bg-[#1a1d26] hover:bg-[#1a1d26]/80 transition-colors flex items-center justify-between"
                 >
-                  <h3 className="text-xl font-semibold text-[#228B22]">{faq.question}</h3>
+                  <h3 className="text-xl font-semibold text-[#28a745]">{faq.question}</h3>
                   <svg 
-                    className={`w-6 h-6 text-[#228B22] transform transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}`} 
+                    className={`w-6 h-6 text-[#28a745] transform transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -741,8 +741,8 @@ All plans include SSD storage, DDoS protection, and 24/7 support.`}
                     openFaq === index ? 'max-h-40 py-4' : 'max-h-0 py-0'
                   }`}
                 >
-                  <div className="border border-[#228B22]/20 rounded-xl bg-[#228B22]/5 p-4">
-                    <p className="text-[#228B22]/90">{faq.answer}</p>
+                  <div className="border border-[#28a745]/20 rounded-xl bg-[#28a745]/5 p-4">
+                    <p className="text-[#28a745]/90">{faq.answer}</p>
                   </div>
                 </div>
               </div>

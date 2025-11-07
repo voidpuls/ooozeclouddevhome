@@ -80,7 +80,7 @@ export default function HardwarePage() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#228B22]/5 to-transparent opacity-20"
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#28a745]/5 to-transparent opacity-20"
              style={{
                backgroundSize: '50px 50px',
                backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent)'
@@ -97,8 +97,8 @@ export default function HardwarePage() {
             transition={{ duration: 0.5 }}
             className="flex justify-center mb-4"
           >
-            <div className="p-3 rounded-xl bg-[#228B22]/10">
-              <Server className="w-8 h-8 text-[#228B22]" />
+            <div className="p-3 rounded-xl bg-[#28a745]/10">
+              <Server className="w-8 h-8 text-[#28a745]" />
             </div>
           </motion.div>
           <motion.h1
@@ -128,15 +128,15 @@ export default function HardwarePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#228B22]/20 transition-all group"
+              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#28a745]/20 transition-all group"
             >
-              <div className="p-3 rounded-xl bg-[#228B22]/10 w-fit mb-4">
-                <metric.icon className="w-6 h-6 text-[#228B22]" />
+              <div className="p-3 rounded-xl bg-[#28a745]/10 w-fit mb-4">
+                <metric.icon className="w-6 h-6 text-[#28a745]" />
               </div>
-              <h3 className="text-lg font-semibold mb-1 group-hover:text-[#228B22] transition-colors">
+              <h3 className="text-lg font-semibold mb-1 group-hover:text-[#28a745] transition-colors">
                 {metric.title}
               </h3>
-              <div className="text-2xl font-bold text-[#228B22] mb-2">
+              <div className="text-2xl font-bold text-[#28a745] mb-2">
                 {metric.value}
               </div>
               <p className="text-gray-400 text-sm">
@@ -157,8 +157,8 @@ export default function HardwarePage() {
               className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-3xl p-8"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 rounded-xl bg-[#228B22]/10 mr-4">
-                  <Gauge className="w-6 h-6 text-[#228B22]" />
+                <div className="p-3 rounded-xl bg-[#28a745]/10 mr-4">
+                  <Gauge className="w-6 h-6 text-[#28a745]" />
                 </div>
                 <h2 className="text-2xl font-bold">{server.name}</h2>
               </div>
@@ -197,7 +197,7 @@ export default function HardwarePage() {
                 <ul className="space-y-2">
                   {server.features.map((feature, index) => (
                     <li key={index} className="flex items-center text-sm">
-                      <CheckCircle className="w-4 h-4 text-[#228B22] mr-2" />
+                      <CheckCircle className="w-4 h-4 text-[#28a745] mr-2" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -234,8 +234,8 @@ export default function HardwarePage() {
               }
             ].map((highlight, index) => (
               <div key={highlight.title} className="space-y-3">
-                <div className="p-3 rounded-xl bg-[#228B22]/10 w-fit">
-                  <highlight.icon className="w-6 h-6 text-[#228B22]" />
+                <div className="p-3 rounded-xl bg-[#28a745]/10 w-fit">
+                  <highlight.icon className="w-6 h-6 text-[#28a745]" />
                 </div>
                 <h3 className="text-lg font-semibold">{highlight.title}</h3>
                 <p className="text-gray-400 text-sm">{highlight.description}</p>

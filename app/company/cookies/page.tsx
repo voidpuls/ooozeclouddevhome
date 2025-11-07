@@ -132,8 +132,8 @@ export default function Cookies() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#228B22]/50 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#28a745]/50 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#28a745]/50 to-transparent"></div>
       </div>
 
       <div className="max-w-5xl mx-auto px-4 py-16 sm:py-24">
@@ -143,7 +143,7 @@ export default function Cookies() {
           variants={fadeIn}
           className="text-center mb-12 sm:mb-16"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#228B22] via-orange-500 to-[#228B22] mb-4 sm:mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#28a745] via-orange-500 to-[#28a745] mb-4 sm:mb-6">
             Cookie Policy
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4">
@@ -161,10 +161,10 @@ export default function Cookies() {
               transition={{ delay: index * 0.1 }}
               className="relative px-2 sm:px-4"
             >
-              <div className="absolute -left-4 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#228B22]/30 to-transparent hidden sm:block"></div>
+              <div className="absolute -left-4 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#28a745]/30 to-transparent hidden sm:block"></div>
               
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 flex flex-col sm:flex-row sm:items-center">
-                <span className="text-[#228B22] mb-2 sm:mb-0 sm:mr-4">{section.title.split('.')[0]}.</span>
+                <span className="text-[#28a745] mb-2 sm:mb-0 sm:mr-4">{section.title.split('.')[0]}.</span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                   {section.title.split('.')[1]}
                 </span>
@@ -178,8 +178,8 @@ export default function Cookies() {
                 <div className="space-y-6 sm:space-y-8 sm:pl-8">
                   {section.subsections.map((subsection) => (
                     <div key={subsection.title} className="relative">
-                      <div className="absolute -left-4 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#228B22]/20 to-transparent hidden sm:block"></div>
-                      <h3 className="text-lg sm:text-xl font-semibold text-[#228B22]/90 mb-2 sm:mb-3">
+                      <div className="absolute -left-4 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#28a745]/20 to-transparent hidden sm:block"></div>
+                      <h3 className="text-lg sm:text-xl font-semibold text-[#28a745]/90 mb-2 sm:mb-3">
                         {subsection.title}
                       </h3>
                       <p className="text-base sm:text-lg text-gray-400 leading-relaxed pl-0 sm:pl-4">
@@ -194,7 +194,7 @@ export default function Cookies() {
                 <div className="pl-4 sm:pl-12 space-y-2 sm:space-y-3">
                   {section.bulletPoints.map((point) => (
                     <div key={point} className="flex items-center group">
-                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#228B22]/50 group-hover:bg-[#228B22] transition-colors mr-3 sm:mr-4 flex-shrink-0"></div>
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#28a745]/50 group-hover:bg-[#28a745] transition-colors mr-3 sm:mr-4 flex-shrink-0"></div>
                       <span className="text-base sm:text-lg text-gray-400 group-hover:text-gray-300 transition-colors">
                         {point}
                       </span>

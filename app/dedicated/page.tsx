@@ -768,7 +768,7 @@ export default function Dedicated() {
   const CountrySelector = () => (
     <div id="country-selector" className="max-w-7xl mx-auto px-4 py-8">
       <div className="text-center mb-12 h-[120px] flex flex-col items-center justify-center">
-        <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#228B22]/20 to-[#f59e0b]/20 text-[#228B22] text-sm font-medium mb-4">
+        <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#28a745]/20 to-[#f59e0b]/20 text-[#28a745] text-sm font-medium mb-4">
           <Globe className="w-4 h-4 mr-2" />
           Global Network
         </div>
@@ -790,8 +790,8 @@ export default function Dedicated() {
                 isOutOfStock 
                   ? 'border-red-500/50 bg-red-500/5 opacity-75 cursor-not-allowed'
                   : selectedCountry === code
-                    ? 'border-[#228B22] bg-gradient-to-b from-[#228B22]/20 to-transparent'
-                    : 'border-gray-800 hover:border-[#228B22]/50 hover:bg-[#228B22]/5'
+                    ? 'border-[#28a745] bg-gradient-to-b from-[#28a745]/20 to-transparent'
+                    : 'border-gray-800 hover:border-[#28a745]/50 hover:bg-[#28a745]/5'
               }`}
             >
               <div className="flex flex-col items-center">
@@ -814,7 +814,7 @@ export default function Dedicated() {
                 )}
                 {selectedCountry === code && !isOutOfStock && (
                   <div className="absolute -top-2 -right-2">
-                    <div className="w-4 h-4 bg-[#228B22] rounded-full flex items-center justify-center">
+                    <div className="w-4 h-4 bg-[#28a745] rounded-full flex items-center justify-center">
                       <svg className="w-3 h-3 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                       </svg>
@@ -885,16 +885,16 @@ export default function Dedicated() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#228B22]/10 text-[#228B22] text-sm font-medium mb-6 relative">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#28a745]/10 text-[#28a745] text-sm font-medium mb-6 relative">
                 <div className="absolute inset-0 bg-black/80 rounded-full shadow-[0_4px_12px_rgba(251,191,36,0.3)] backdrop-blur-sm"></div>
-                <span className="w-2 h-2 rounded-full bg-[#228B22] animate-pulse mr-2 relative z-10"></span>
+                <span className="w-2 h-2 rounded-full bg-[#28a745] animate-pulse mr-2 relative z-10"></span>
                 <span className="relative z-10">Enterprise Grade Hardware</span>
               </div>
               <h1 className="text-4xl lg:text-7xl font-bold mb-6 tracking-tight leading-none">
                 Dedicated 
                 <span className="relative">
-                  <span className="relative z-10 text-[#228B22]"> Servers</span>
-                  <span className="absolute bottom-0 left-0 w-full h-2 bg-[#228B22]/20 rounded-full blur-sm"></span>
+                  <span className="relative z-10 text-[#28a745]"> Servers</span>
+                  <span className="absolute bottom-0 left-0 w-full h-2 bg-[#28a745]/20 rounded-full blur-sm"></span>
                 </span>
               </h1>
               <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
@@ -909,9 +909,9 @@ export default function Dedicated() {
                   { value: "10Gbps", label: "Network" }
                 ].map((stat, index) => (
                   <div key={index} className="relative group">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#228B22]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#28a745]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
                     <div className="relative text-center">
-                      <div className="text-2xl font-bold text-[#228B22] mb-1">{stat.value}</div>
+                      <div className="text-2xl font-bold text-[#28a745] mb-1">{stat.value}</div>
                       <div className="text-sm text-gray-400">{stat.label}</div>
                     </div>
                   </div>
@@ -923,7 +923,7 @@ export default function Dedicated() {
             <div className="flex-1 w-full max-w-xl">
               <div className="relative">
                 {/* Server Glow Effect */}
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#228B22] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#28a745] to-[#f59e0b] rounded-2xl opacity-20 blur"></div>
                 
                 <div className="relative bg-[#0f1117] rounded-xl overflow-hidden border border-gray-800/50">
                   {/* Server Header */}
@@ -943,7 +943,7 @@ export default function Dedicated() {
                   <div className="p-4 font-mono text-sm">
                     <div className="space-y-2">
                       <div className="flex items-center text-gray-400">
-                        <span className="text-[#228B22]">$</span>
+                        <span className="text-[#28a745]">$</span>
                         <span className="ml-2 typing-animation">systemctl status nginx</span>
                       </div>
                       <div className="pl-4">
@@ -972,11 +972,11 @@ export default function Dedicated() {
                       <div className="space-y-2">
                         <div className="flex justify-between text-xs">
                           <span className="text-gray-400">CPU</span>
-                          <span className="text-[#228B22]">{metrics.cpu}%</span>
+                          <span className="text-[#28a745]">{metrics.cpu}%</span>
                         </div>
                         <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
                           <div 
-                            className="h-full bg-[#228B22] rounded-full transition-all duration-500 ease-out"
+                            className="h-full bg-[#28a745] rounded-full transition-all duration-500 ease-out"
                             style={{ width: `${metrics.cpu}%` }}
                           ></div>
                         </div>
@@ -984,11 +984,11 @@ export default function Dedicated() {
                       <div className="space-y-2">
                         <div className="flex justify-between text-xs">
                           <span className="text-gray-400">RAM</span>
-                          <span className="text-[#228B22]">{metrics.memory}GB</span>
+                          <span className="text-[#28a745]">{metrics.memory}GB</span>
                         </div>
                         <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
                           <div 
-                            className="h-full bg-[#228B22] rounded-full transition-all duration-500 ease-out"
+                            className="h-full bg-[#28a745] rounded-full transition-all duration-500 ease-out"
                             style={{ width: `${(metrics.memory / 128) * 100}%` }}
                           ></div>
                         </div>
@@ -996,11 +996,11 @@ export default function Dedicated() {
                       <div className="space-y-2">
                         <div className="flex justify-between text-xs">
                           <span className="text-gray-400">Network</span>
-                          <span className="text-[#228B22]">{metrics.network}Gbps</span>
+                          <span className="text-[#28a745]">{metrics.network}Gbps</span>
                         </div>
                         <div className="h-1 bg-gray-800 rounded-full overflow-hidden">
                           <div 
-                            className="h-full bg-[#228B22] rounded-full transition-all duration-500 ease-out"
+                            className="h-full bg-[#28a745] rounded-full transition-all duration-500 ease-out"
                             style={{ width: `${(metrics.network / 100) * 100}%` }}
                           ></div>
                         </div>
@@ -1075,9 +1075,9 @@ export default function Dedicated() {
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   className="w-full px-6 py-4 flex items-center justify-between text-left"
                 >
-                  <h3 className="text-xl font-bold text-[#228B22]">{faq.question}</h3>
+                  <h3 className="text-xl font-bold text-[#28a745]">{faq.question}</h3>
                   <svg 
-                    className={`w-6 h-6 text-[#228B22] transform transition-transform duration-200 ${openFaq === index ? 'rotate-180' : ''}`} 
+                    className={`w-6 h-6 text-[#28a745] transform transition-transform duration-200 ${openFaq === index ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"

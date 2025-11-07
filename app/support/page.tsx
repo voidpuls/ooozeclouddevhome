@@ -105,7 +105,7 @@ export default function SupportPage() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-orange-500/10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#228B22]/5 to-transparent opacity-20"
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#28a745]/5 to-transparent opacity-20"
              style={{
                backgroundSize: '50px 50px',
                backgroundImage: 'linear-gradient(0deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(36, 251, 57, 0.03) 25%, rgba(36, 251, 57, 0.03) 26%, transparent 27%, transparent 74%, rgba(36, 251, 57, 0.03) 75%, rgba(36, 251, 57, 0.03) 76%, transparent 77%, transparent)'
@@ -122,8 +122,8 @@ export default function SupportPage() {
             transition={{ duration: 0.5 }}
             className="flex justify-center mb-4"
           >
-            <div className="p-3 rounded-xl bg-[#228B22]/10">
-              <Rocket className="w-8 h-8 text-[#228B22]" />
+            <div className="p-3 rounded-xl bg-[#28a745]/10">
+              <Rocket className="w-8 h-8 text-[#28a745]" />
             </div>
           </motion.div>
           <motion.h1
@@ -153,20 +153,20 @@ export default function SupportPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#228B22]/20 transition-all group"
+              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#28a745]/20 transition-all group"
             >
               <div className="flex flex-col h-full">
-                <div className="p-3 rounded-xl bg-[#228B22]/10 w-fit mb-4">
-                  <option.icon className="w-6 h-6 text-[#228B22]" />
+                <div className="p-3 rounded-xl bg-[#28a745]/10 w-fit mb-4">
+                  <option.icon className="w-6 h-6 text-[#28a745]" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-[#228B22] transition-colors">
+                <h3 className="text-lg font-semibold mb-2 group-hover:text-[#28a745] transition-colors">
                   {option.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4 flex-grow">
                   {option.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-[#228B22]">
+                  <span className="text-xs text-[#28a745]">
                     {option.availability}
                   </span>
                   <Link
@@ -199,11 +199,11 @@ export default function SupportPage() {
                   onClick={() => setActiveQuestion(activeQuestion === index ? null : index)}
                   className="w-full flex items-center justify-between text-left"
                 >
-                  <span className="text-lg font-medium hover:text-[#228B22] transition-colors">
+                  <span className="text-lg font-medium hover:text-[#28a745] transition-colors">
                     {faq.question}
                   </span>
                   {activeQuestion === index ? (
-                    <ChevronUp className="w-5 h-5 text-[#228B22]" />
+                    <ChevronUp className="w-5 h-5 text-[#28a745]" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-gray-400" />
                   )}
@@ -233,12 +233,12 @@ export default function SupportPage() {
           {contactMethods.map((method, index) => (
             <div
               key={method.title}
-              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#228B22]/20 transition-all group"
+              className="bg-white/[0.01] backdrop-blur-xl border border-white/[0.05] rounded-2xl p-6 hover:border-[#28a745]/20 transition-all group"
             >
-              <div className="p-3 rounded-xl bg-[#228B22]/10 w-fit mb-4">
-                <method.icon className="w-6 h-6 text-[#228B22]" />
+              <div className="p-3 rounded-xl bg-[#28a745]/10 w-fit mb-4">
+                <method.icon className="w-6 h-6 text-[#28a745]" />
               </div>
-              <h3 className="text-lg font-semibold mb-2 group-hover:text-[#228B22] transition-colors">
+              <h3 className="text-lg font-semibold mb-2 group-hover:text-[#28a745] transition-colors">
                 {method.title}
               </h3>
               <p className="text-gray-400 text-sm mb-4">
@@ -246,7 +246,7 @@ export default function SupportPage() {
               </p>
               <Link
                 href={method.link}
-                className="inline-flex items-center text-sm text-[#228B22] hover:text-[#228B22]/80 transition-colors"
+                className="inline-flex items-center text-sm text-[#28a745] hover:text-[#28a745]/80 transition-colors"
               >
                 {method.linkText} →
               </Link>
