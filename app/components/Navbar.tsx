@@ -113,11 +113,6 @@ export default function Navbar() {
           specs: ['Starting at $21.99 per month']
         },
         {
-          title: 'DayZ',
-          url: '/games/dayz',
-          specs: ['Starting at $14.99 per month']
-        },
-        {
           title: 'Unturned',
           url: '/games/unturned',
           specs: ['Starting at $8.99 per month']
@@ -256,8 +251,8 @@ export default function Navbar() {
                   <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#28a745] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#28a745]"></span>
                 </span>
-                <span className="text-[#28a745] text-sm">New servers available!</span>
-                <span className="text-white bg-[#28a745] px-2 py-0.5 text-xs rounded-full">5</span>
+                <span className="text-[#28a745] text-sm">Games Avalible!</span>
+                <span className="text-white bg-[#28a745] px-2 py-0.5 text-xs rounded-full">11</span>
               </div>
             </div>
           </div>

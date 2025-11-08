@@ -105,7 +105,7 @@ export default function Home() {
                   <div className="text-gray-500 text-sm mt-1">Uptime</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-[#28a745]">15ms</div>
+                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-[#28a745]">60ms</div>
                   <div className="text-gray-500 text-sm mt-1">Avg. Latency</div>
                 </div>
                 <div>
@@ -190,110 +190,131 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Datacenter Section */}
-      <section className="py-32 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/5 to-transparent"></div>
-        
-        <div className="max-w-7xl mx-auto relative">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Datacenter</h2>
-            <p className="text-gray-400">Next-Generation Infrastructure for Gaming</p>
-          </div>
+     {/* Partners Section */}
+<section className="py-32 px-4 relative overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/5 to-transparent"></div>
+  
+  <div className="max-w-7xl mx-auto relative">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-white mb-4">Our Trusted Partners</h2>
+      <p className="text-gray-400">Building a Strong Network for Gaming Excellence</p>
+    </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Side - Datacenter Info */}
-            <div className="space-y-8">
-              <div className="relative bg-gradient-to-r from-[#28a745]/10 to-orange-500/10 rounded-xl p-[1px]">
-                <div className="bg-black rounded-xl p-8">
-                  <h3 className="text-2xl font-bold text-white mb-6">Tier 4 Datacenter Features</h3>
-                  <div className="space-y-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#28a745] to-orange-500 p-[1px]">
-                        <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
-                          <svg className="w-6 h-6 text-[#28a745]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="text-white font-semibold">Redundant Power Systems</h4>
-                        <p className="text-gray-400">Multiple independent power sources with UPS backup and diesel generators ensure 99.995% power availability</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#28a745] to-orange-500 p-[1px]">
-                        <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
-                          <svg className="w-6 h-6 text-[#28a745]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="text-white font-semibold">Advanced Cooling Infrastructure</h4>
-                        <p className="text-gray-400">Precision cooling systems with N+1 redundancy maintain optimal temperature and humidity levels for maximum hardware performance</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#28a745] to-orange-500 p-[1px]">
-                        <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
-                          <svg className="w-6 h-6 text-[#28a745]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                          </svg>
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="text-white font-semibold">Multi-Layer Security</h4>
-                        <p className="text-gray-400">Advanced physical and network security measures protect your infrastructure 24/7</p>
-                      </div>
-                    </div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      {/* Left Side - Partner Capabilities */}
+      <div className="space-y-8">
+        <div className="relative bg-gradient-to-r from-[#28a745]/10 to-orange-500/10 rounded-xl p-[1px]">
+          <div className="bg-black rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6">Partner Capabilities</h3>
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#28a745] to-orange-500 p-[1px]">
+                  <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#28a745]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
                   </div>
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold">Global Network & Infrastructure</h4>
+                  <p className="text-gray-400">Collaborating with worldwide partners to ensure high-performance connectivity and reliable infrastructure for gamers everywhere.</p>
                 </div>
               </div>
 
-              <div className="relative bg-gradient-to-r from-[#28a745]/10 to-orange-500/10 rounded-xl p-[1px]">
-                <div className="bg-black rounded-xl p-8">
-                  <h3 className="text-2xl font-bold text-white mb-6">Network Capabilities</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                      <span className="text-white">Global Network Points</span>
-                      <span className="text-purple-500 font-semibold">200+</span>
-                    </div>
-                    <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                      <span className="text-white">Total Bandwidth</span>
-                      <span className="text-purple-500 font-semibold">100+ Tbps</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-white">DDoS Protection</span>
-                      <span className="text-purple-500 font-semibold">Automatic</span>
-                    </div>
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#28a745] to-orange-500 p-[1px]">
+                  <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#28a745]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
                   </div>
                 </div>
+                <div>
+                  <h4 className="text-white font-semibold">Advanced Security & Reliability</h4>
+                  <p className="text-gray-400">Partnering with security leaders to provide protection, redundancy, and uptime for all gaming infrastructure.</p>
+                </div>
               </div>
-            </div>
 
-            {/* Right Side - Datacenter Image */}
-            <div className="relative bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-[1px] h-full">
-              <div className="bg-black rounded-xl p-8 h-full">
-                <div className="relative h-full min-h-[600px] rounded-lg overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-                    alt="Modern datacenter infrastructure"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-2xl font-bold text-white mb-2">Enterprise-Grade Infrastructure</h3>
-                    <p className="text-gray-300">Our state-of-the-art datacenter facilities are designed for maximum reliability, security, and performance. With redundant systems and 24/7 monitoring, we ensure your game servers stay online and perform at their best.</p>
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-[#28a745] to-orange-500 p-[1px]">
+                  <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-[#28a745]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
                   </div>
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold">Community & Content Tools</h4>
+                  <p className="text-gray-400">Working with partners to develop community-driven features and tools that enhance multiplayer experiences.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        {/* Additional Partner Capabilities */}
+        <div className="relative bg-gradient-to-r from-[#28a745]/10 to-orange-500/10 rounded-xl p-[1px]">
+          <div className="bg-black rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6">Our Partner Network</h3>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                <span className="text-white">Global Reach</span>
+                <span className="text-purple-500 font-semibold">200+ Countries</span>
+              </div>
+              <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                <span className="text-white">Bandwidth & Connectivity</span>
+                <span className="text-purple-500 font-semibold">100+ Tbps</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-white">Security & DDoS Protection</span>
+                <span className="text-purple-500 font-semibold">24/7 Monitoring</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Side - Our Partners Showcase */}
+      <div className="relative bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl p-[1px] h-full">
+        <div className="bg-black rounded-xl p-8 h-full">
+          <h3 className="text-2xl font-bold text-white mb-6">Our Trusted Partners</h3>
+          <div className="grid grid-cols-1 gap-6 h-full overflow-y-auto">
+            {/* Partner 1 */}
+            <div className="bg-gray-900/40 border border-white/10 rounded-xl p-6 hover:border-[#28a745]/50 transition-all">
+              <div className="flex items-center mb-4">
+                <img
+                  src="https://abrhosting.com/assets/images/temps/footer/logo-d.png"
+                  alt="Abr Hosting Logo"
+                  width={60}
+                  height={60}
+                  className="rounded-lg mr-4"
+                />
+                <h4 className="text-xl font-bold text-white">Abr Hosting</h4>
+              </div>
+              <p className="text-gray-300">Our primary hosting partner providing robust infrastructure solutions to ensure seamless gaming experiences.</p>
+            </div>
+            {/* Partner 2 - Dezerx */}
+            <div className="bg-gray-900/40 border border-white/10 rounded-xl p-6 hover:border-[#28a745]/50 transition-all">
+              <div className="flex items-center mb-4">
+                <img
+                  src="/images/dezerlogo.webp"
+                  alt="Dezerx Logo"
+                  width={60}
+                  height={60}
+                  className="rounded-lg mr-4"
+                />
+                <h4 className="text-xl font-bold text-white">Dezerx</h4>
+              </div>
+              <p className="text-gray-300">
+                Streamline your software billing with intelligent automation, real-time analytics, and seamless payment processing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* FAQ Section */}
       <section className="py-32 px-4">
@@ -355,11 +376,6 @@ const games = [
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg"
   },
   {
-    name: "SCP: Secret Laboratory",
-    description: "Secure, high-performance servers for intense multiplayer action.",
-    image: "https://cdn.cloudflare.steamstatic.com/steam/apps/700330/header.jpg"
-  },
-  {
     name: "Palworld",
     description: "Dedicated Palworld servers with automatic updates and optimization.",
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg"
@@ -370,19 +386,9 @@ const games = [
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg"
   },
   {
-    name: "DayZ",
-    description: "High-performance DayZ servers with mod support and anti-cheat.",
-    image: "https://cdn.cloudflare.steamstatic.com/steam/apps/221100/header.jpg"
-  },
-  {
     name: "Garry's Mod",
     description: "Flexible servers with workshop support and addon management.",
     image: "https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg"
-  },
-  {
-    name: "Project Zomboid",
-    description: "Zombie survival servers with extensive mod support and customization.",
-    image: "https://cdn.cloudflare.steamstatic.com/steam/apps/108600/header.jpg"
   }
 ];
 

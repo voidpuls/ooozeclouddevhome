@@ -22,6 +22,11 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'abrhosting.com',
+        pathname: '/assets/images/temps/footer/*',
+      },
     ],
   },
   eslint: {

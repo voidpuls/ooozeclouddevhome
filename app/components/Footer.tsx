@@ -49,8 +49,6 @@ export default function Footer() {
             <ul className="space-y-4">
               {[
                 { label: "Ark: Survival Evolved", href: "/games/ark-survival-evolved" },
-                { label: "DayZ", href: "/games/dayz" },
-                { label: "Enshrouded", href: "/games/enshrouded" },
                 { label: "Minecraft", href: "/games/minecraft" },
                 { label: "Palworld", href: "/games/palworld" },
                 { label: "Rust", href: "/games/rust" },
@@ -98,12 +96,8 @@ export default function Footer() {
             <h4 className="text-[#28a745] font-bold text-base uppercase mb-8">CUSTOMER RESOURCES</h4>
             <ul className="space-y-4">
               {[
-                { label: "Login", href: "/auth/login" },
-                { label: "Register", href: "/authhttps://client.oozecloud.com/" },
-                { label: "VPS Dashboard", href: "/dashboard/vps" },
-                { label: "Dedicated Dashboard", href: "/dashboard/dedicated" },
-                { label: "Game Dashboard", href: "/dashboard/games" },
-                { label: "cPanel Webhost", href: "/dashboard/cpanel" }
+                { label: "Dashboard", href: "https://control.oozecloud.com" },
+                { label: "Billing", href: "https://client.oozecloud.com/" }
               ].map((link, index) => (
                 <li key={index}>
                   <a 
